@@ -5,3 +5,7 @@ function SaveItem() {
     list =  name +" "+localStorage.getItem(name);
   document.getElementById('list').innerHTML = list;
 }
+function change() {
+  var i="HaHa";
+  document.getElementById("abc").href="mailto:vshivanand2@gmail.com?Subject=bill&body="+i;
+}
