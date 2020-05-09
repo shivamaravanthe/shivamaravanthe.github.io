@@ -8,23 +8,85 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-     <h3 id="angdihesr">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</h3>
-     <div id="right">
-        <span id="cart">
-          <p id="addBag">0</p>
-          <a href=""><img src="catimg/cheela.jpeg" alt="cheela" id="cheela"></img></a>
-        </span>
-       </div>
-     </header> 
+<header>
+<p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
+<img src="catimg/cheela.jpeg" alt="ಚೀಲ" id="bag">
+</header>
+
+</div>
     <div id="home">
-         <div class="row">
-            <a href="categories/akki/akki.html"><div class="items"><img src="catimg/rice.jpg" class="catImg"></img><p class="catName">akki</p></div></a>
-            <a href="categories/akki/akki.html"><div class="items"><img src="catimg/masalas.jpg" class="catImg"></img><p class="catName">grams</p></div></a>
-            <a href="categories/akki/akki.html"><div class="items"><img src="catimg/tea.jpeg" class="catImg"></img><p class="catName">tea</p></div></a>
-        </div>
-        
-    
+          <div class="row">
+            <div class="card" onclick="displaycontent(document.getElementById('1'))">
+    <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
+    <h4>Tailored Jeans</h4>
+    <p class="price">$19.99</p>
+    <div class="content" id="1">
+      <ul style="list-style: none;">
+
+          <span style="background-color: #ffffff ;">
+          <p>₹32</p>
+          <p>ಎಷ್ಟು ಕೆಜಿ</p>
+        </span>
+            <input type="number" name="quantity" step="0.5" min="0">
+        <li>
+          <button>Add to Cart</button>
+        </li>
+      </ul>
+      </div>
+
+  </div>
+  <div class="card" onclick="displaycontent(document.getElementById('2'))">
+  <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Tailored Jeans</h4>
+  <p class="price">$19.99</p>
+  <div class="content" id="2">
+    <ul style="list-style: none;">
+
+        <span style="background-color: #ffffff ;">
+        <p>₹32</p>
+        <p>ಎಷ್ಟು ಕೆಜಿ</p>
+      </span>
+          <input type="number" name="quantity" step="0.5" min="0">
+      <li>
+        <button>Add to Cart</button>
+      </li>
+    </ul>
     </div>
+
+  </div>
+  <div class="card" onclick="displaycontent(document.getElementById('3'))">
+<img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
+<h4>Tailored Jeans</h4>
+<p class="price">$19.99</p>
+<div class="content" id="3">
+  <ul style="list-style: none;">
+
+      <span style="background-color: #ffffff ;">
+      <p>₹32</p>
+      <p>ಎಷ್ಟು ಕೆಜಿ</p>
+    </span>
+        <input type="number" name="quantity" step="0.5" min="0">
+    <li>
+      <button>Add to Cart</button>
+    </li>
+  </ul>
+  </div>
+</div>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+    function displaycontent(content) {
+    if (content.style.display === "flex") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "flex";
+    }
+    }
+    </script>
 </body>
 </html>
