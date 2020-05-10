@@ -26,14 +26,11 @@ header{
   background: #ed733f;
   display: none;
   flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
   font-size: 2vw;
-}
-.conrow{
-  max-width: 50%;
-  margin: auto;
-  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.25vw;
 }
 #home{
     height: 90vw;
@@ -51,29 +48,35 @@ header{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 30%;
   margin: auto;
-  text-align: center;
-}
-.price {
-  color: white;
-  font-size: 1.5vw;
+  text-align: justify;
+  font-size: 2.5vw;
 }
 .card input{
   height: 3vw;
-  width: 97%;
-  margin-bottom: -2vw;
+  margin-top: 1.5vw;
+  width: 90%;
+  align-items: center;
+  margin-left: 1.25vw;
+  margin-bottom: -1vw;
 }
 .card button {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
   border: none;
+  border-radius: 1vw;
+  padding-left: 1vw;
+  width: 90%;
   outline: 0;
   color: white;
   background-color: #7a57d1;
   text-align: center;
   cursor: pointer;
   font-size: 2vw;
-  margin-top: -2vw;
+  margin-top: -1.5vw;
+  margin-bottom: 0.2vw;
+
 }
 
 .card button:hover {
-  opacity: 0.3;
+  opacity: 0.8;
   background-color: #0da574;
 }
