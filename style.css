@@ -59,6 +59,7 @@ header{
 }
 .card input{
   height: 3vw;
+  width: 97%;
   margin-bottom: -2vw;
 }
 .card button {
