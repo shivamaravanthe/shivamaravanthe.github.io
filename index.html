@@ -13,79 +13,72 @@
 <img src="catimg/cheela.jpeg" alt="ಚೀಲ" id="bag">
 </header>
 
-</div>
-    <div id="home">
-          <div class="row">
-            <div class="card" onclick="displaycontent(document.getElementById('1'))">
-    <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
-    <h4>Tailored Jeans</h4>
-    <p class="price">$19.99</p>
-    <div class="content" id="1">
-      <ul style="list-style: none;">
+<div id="home">
+    <div class="row">
+            <div class="card" onclick="displaycontent(1)">
+              <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
+              <h4>Tailored Jeans</h4>
+              <span class="price">₹32</span>
+                <div class="content" id="1">
+                    <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,1)">
+                    <p>₹345</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
 
-          <span style="background-color: #ffffff ;">
-          <p>₹32</p>
-          <p>ಎಷ್ಟು ಕೆಜಿ</p>
-        </span>
-            <input type="number" name="quantity" step="0.5" min="0">
-        <li>
-          <button>Add to Cart</button>
-        </li>
-      </ul>
+            <div class="card" onclick="displaycontent(2)">
+              <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
+              <h4>Tailored Jeans</h4>
+              <span class="price">₹32</span>
+                <div class="content" id="2">
+                    <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,2)">
+                    <p>₹345</p>
+                    <button>Add to Cart</button>
+                </div>
+                </div>
+
+            <div class="card" onclick="displaycontent(3)">
+              <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
+              <h4>Tailored Jeans</h4>
+              <span class="price">₹32</span>
+                <div class="content" id="3">
+                    <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,3)">
+                    <p>₹345</p>
+                    <button>Add to Cart</button>
+                </div>
+
+              </div>
       </div>
-
-  </div>
-  <div class="card" onclick="displaycontent(document.getElementById('2'))">
-  <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
-  <h4>Tailored Jeans</h4>
-  <p class="price">$19.99</p>
-  <div class="content" id="2">
-    <ul style="list-style: none;">
-
-        <span style="background-color: #ffffff ;">
-        <p>₹32</p>
-        <p>ಎಷ್ಟು ಕೆಜಿ</p>
-      </span>
-          <input type="number" name="quantity" step="0.5" min="0">
-      <li>
-        <button>Add to Cart</button>
-      </li>
-    </ul>
-    </div>
-
-  </div>
-  <div class="card" onclick="displaycontent(document.getElementById('3'))">
-<img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
-<h4>Tailored Jeans</h4>
-<p class="price">$19.99</p>
-<div class="content" id="3">
-  <ul style="list-style: none;">
-
-      <span style="background-color: #ffffff ;">
-      <p>₹32</p>
-      <p>ಎಷ್ಟು ಕೆಜಿ</p>
-    </span>
-        <input type="number" name="quantity" step="0.5" min="0">
-    <li>
-      <button>Add to Cart</button>
-    </li>
-  </ul>
-  </div>
 </div>
-
-    </div>
-
-
-
 
     <script type="text/javascript">
 
-    function displaycontent(content) {
+    function displaycontent(a) {
+      var content=document.getElementById(a);
     if (content.style.display === "flex") {
       content.style.display = "none";
     } else {
       content.style.display = "flex";
     }
+    for (var j = 1; j <=document.getElementsByClassName("card").length; j++) {
+      var nocontent=document.getElementById(j);
+      if (a!==j) {
+        nocontent.style.display = "none";
+      }else {
+        nocontent.style.display = "flex";
+      }
+    }
+    }
+    function calprice(p,j) {
+      var x = document.querySelectorAll("p");
+      var y = document.querySelectorAll("input");
+      var z = x.length-1;
+      for (var i = 1; i <= z ; i++) {
+        if(i==j){
+            x[i].innerHTML = "₹"+p*y[i-1].value;
+        }
+
+      }
     }
     </script>
 </body>
