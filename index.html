@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow: 400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
-    <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+    <title>Document</title>
 </head>
 <body>
 <header>
@@ -17,19 +17,19 @@
     <div class="row">
             <div class="card" onclick="displaycontent(1)">
               <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
-              <h4>Tailored Jeans</h4>
-              <span class="price">₹32</span>
+              <span>Tailored Jeans</span>
+              <span class="price">&nbsp;&nbsp;₹32</span>
                 <div class="content" id="1">
-                    <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,1)">
+                    <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,1)" >
                     <p>₹345</p>
-                    <button>Add to Cart</button>
+                    <button>ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
                 </div>
             </div>
 
             <div class="card" onclick="displaycontent(2)">
               <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
-              <h4>Tailored Jeans</h4>
-              <span class="price">₹32</span>
+                <span>Tailored Jeans</span>
+                <span class="price">&nbsp;&nbsp;₹32</span>
                 <div class="content" id="2">
                     <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,2)">
                     <p>₹345</p>
@@ -39,8 +39,8 @@
 
             <div class="card" onclick="displaycontent(3)">
               <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
-              <h4>Tailored Jeans</h4>
-              <span class="price">₹32</span>
+              <span>Tailored Jeans</span>
+              <span class="price">&nbsp;&nbsp;₹32</span>
                 <div class="content" id="3">
                     <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,3)">
                     <p>₹345</p>
@@ -51,7 +51,7 @@
       </div>
 </div>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
 
     function displaycontent(a) {
       var content=document.getElementById(a);
@@ -81,5 +81,6 @@
       }
     }
     </script>
+
 </body>
 </html>
