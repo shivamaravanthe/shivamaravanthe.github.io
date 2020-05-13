@@ -1,86 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow: 400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-<header>
-<p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
-<img src="catimg/cheela.jpeg" alt="ಚೀಲ" id="bag">
-</header>
+    <script type="text/javascript" src="java.js"></script>
+    <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+ </head>
 
-<div id="home">
-    <div class="row">
-            <div class="card" onclick="displaycontent(1)">
-              <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
-              <span>ಅಕ್ಕಿ</span>
-              <span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹32</span>
-                <div class="content" id="1">
-                    <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,1)" >
-                    <p>₹345</p>
-                    <button>ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
-                </div>
-            </div>
-
-            <div class="card" onclick="displaycontent(2)">
-              <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
-                <span>ಅಕ್ಕಿ</span>
-                <span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹32</span>
-                <div class="content" id="2">
-                    <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,2)">
-                    <p>₹345</p>
-                    <button>Add to Cart</button>
-                </div>
-                </div>
-
-            <div class="card" onclick="displaycontent(3)">
-              <img src="catimg/rice.jpg" alt="Denim Jeans" style="width:100%">
-              <span>ಅಕ್ಕಿ</span>
-              <span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹32</span>
-                <div class="content" id="3">
-                    <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,3)">
-                    <p>₹345</p>
-                    <button>Add to Cart</button>
-                </div>
-
-              </div>
+ <body onload="intialize()">
+  <header>
+   <p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
+   <a href="cheela/cheela.html"><img src="catimg/cheela.jpeg" alt="ಚೀಲ" id="bag" ></a>
+  </header>
+  <div id="home">
+   <div class="row">
+    <div class="card" onclick="displaycontent(1)">
+     <img src="catimg/rice.jpg" alt="Denim Jeans">
+     <span class="pname">ಅಕ್ಕಿ</span>
+     <span class="price">₹11</span>
+      <div class="content" id="1">
+       <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,1)" >
+       <p>₹345</p>
+       <button onclick="submit(1)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
       </div>
-</div>
+    </div>
 
-  <script type="text/javascript">
+    <div class="card" onclick="displaycontent(2)">
+     <img src="catimg/rice.jpg" alt="Denim Jeans" >
+     <span class="pname">Tailored Jeans</span>
+     <span class="price">₹22</span>
+      <div class="content" id="2">
+       <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,2)">
+       <p>₹345</p>
+       <button onclick="submit(2)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+      </div>
+    </div>
 
-    function displaycontent(a) {
-      var content=document.getElementById(a);
-    if (content.style.display === "flex") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "flex";
-    }
-    for (var j = 1; j <=document.getElementsByClassName("card").length; j++) {
-      var nocontent=document.getElementById(j);
-      if (a!==j) {
-        nocontent.style.display = "none";
-      }else {
-        nocontent.style.display = "flex";
-      }
-    }
-    }
-    function calprice(p,j) {
-      var x = document.querySelectorAll("p");
-      var y = document.querySelectorAll("input");
-      var z = x.length-1;
-      for (var i = 1; i <= z ; i++) {
-        if(i==j){
-            x[i].innerHTML = "₹"+p*y[i-1].value;
-        }
+    <div class="card" onclick="displaycontent(3)">
+     <img src="catimg/rice.jpg" alt="Denim Jeans" >
+     <span class="pname">Ragi</span>
+     <span class="price">₹33</span>
+      <div class="content" id="3">
+       <input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು ಕೆಜಿ" oninput="calprice(32,3)">
+       <p>₹345</p>
+       <button onclick="submit(3)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+      </div>
+    </div>
+   </div>
 
-      }
-    }
-    </script>
+  </div>
 
-</body>
+
+
+ </body>
 </html>
