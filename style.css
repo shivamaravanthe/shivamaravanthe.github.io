@@ -1,3 +1,4 @@
+/*Style entire body*/
 body{
     font-family: "Noto Sans Kannada Regular", serif;
     background-color: #3d6cb9;
@@ -20,30 +21,23 @@ header{
 #bag{
   height: 9vw;
   padding-top: 5vw;
-  padding-right: 3vw
+  padding-right: 3vw;
 }
-.content {
-  background: #ed733f;
-  display: none;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-size: 2.5vw;
-  color: #ffffff;
-  text-align: center;
-  border-radius: 0.25vw;
-}
+/*Each row of 3 cards are made into a new column*/
 #home{
-    height: 90vw;
+    /*height: 90vw;*/
     display: flex;
     flex-direction: column;
 }
+/*Each card added are placed in the row*/
 .row{
-    margin-bottom: 3vw;
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
-    margin-top: 0:
+    margin-top: 0;
+    margin-bottom: 4vw;
 }
+/*Syling each card*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 30%;
@@ -51,14 +45,31 @@ header{
   text-align: justify;
   font-size: 3.5vw;
 }
+/*Making img take up entire card width*/
+.card img{
+  width :  100%;
+}
+/*Dropdown content*/
+.content {
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 2.5vw;
+  background: #ed733f;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.7vw;
+}
+/*Text box*/
+/*widht 90% to make it appt for mobile browsers*/
 .card input{
-  height: 3vw;
   margin-top: 1.5vw;
   width: 90%;
   align-items: center;
   margin-left: 1.25vw;
   margin-bottom: -1vw;
 }
+/*Add to list button*/
 .card button {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
   border: none;
@@ -73,10 +84,18 @@ header{
   font-size: 3vw;
   margin-top: -1.5vw;
   margin-bottom: 0.5vw;
-
 }
-
+/*to change color*/
 .card button:hover {
   opacity: 0.8;
   background-color: #0da574;
+}
+/*to make img blink*/
+#bag {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+#bag.fade {
+  opacity: 0;
+  transition: opacity 0.25s;
 }
