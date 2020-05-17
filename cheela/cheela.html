@@ -7,24 +7,34 @@
     <script type="text/javascript" src="../java.js"></script>
   </head>
   <body onload="showItems()">
-  <h3>ಪಟ್ಟಿ</h3>
+    <div class="abcd">
+      <label for="custname">ಹೆಸರು:- </label>
+      <input type="text" id="custname"  placeholder="ನಿಮ್ಮ ಹೆಸರು">
+      <h2>ಪಟ್ಟಿ</h2>
+    </div>
+    <div id="myDIV" class="header">
+      <div class="prodname">
+              <input type="text" id="prodname" placeholder="ಹೆಸರು..">
+              <input type="text" id="myInput" placeholder="ಪ್ರಮಾಣ..">
+      </div>
+      <button type="button" name="button" class="addBtn" onclick="newElement()">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+    </div>
+    <button type="button" name="button" onclick="clean()">clean</button>
   <ul id="myUL">
   </ul>
-  <div id="myDIV" class="header">
-    <div class="prodname">
-            <input type="text" id="prodname" placeholder="ಹೆಸರು..">
-            <input type="number" id="prodquantity" placeholder="ಪ್ರಮಾಣ..">
-    </div>
-    <button type="button" name="button" class="addBtn">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
-  </div>
-  <div class="abcd">
-    <label for="custname">ಹೆಸರು:- </label>
-    <input type="text" id="custname"  placeholder="ನಿಮ್ಮ ಹೆಸರು">
-    <a href="https://wa.me/918660537925?text=Im%20interested%20in%20your%20car%20for%20sale" title="click to open whatsapp chat">
-      <button style="font-size:24px">SEND<i class="fa fa-whatsapp"></i></button>
-    </a>
-  </div>
 
+
+
+
+  <footer>
+    <div >
+        <button id="whatsapp" onclick="checknamew()">ಕಳುಹಿಸಿ--><i class="fa fa-whatsapp"></i></button>
+    </div>
+    <div>
+        <button id="mail" onclick="checknamee()">ಕಳುಹಿಸಿ-->&#x1F4E7;</button>
+    </div>
+
+  </footer>
 
 
 </body>
