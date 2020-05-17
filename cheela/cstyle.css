@@ -26,6 +26,7 @@ ul li {
   padding: 12px 8px 12px 40px;
   list-style-type: none;
   background: #eee;
+  color: #000;
   font-size: 18px;
   transition: 0.2s;
 
@@ -86,7 +87,7 @@ ul li.checked::before {
   color: white;
   text-align: left;
   width: 100%;
-
+    background: #28c7fa;
 }
 
 /* Clear floats after the header */
@@ -97,18 +98,17 @@ ul li.checked::before {
 }
 /* Style the "Add" button */
 .addBtn {
-  margin-left:25vw;
-  width: 50%;
-  background: #fabcda;
-  color: #555;
-  float: center;
+  margin-left:28vw;
+  width: 40%;
+  background: #7a57d1;
+  color: #fff;
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 3vw;
 }
 .addBtn:hover {
-  background-color: #bbb;
+  background-color: #0da574;
 }
 .prodname{
     display: flex;
@@ -121,4 +121,40 @@ ul li.checked::before {
   margin-right: auto;
   text-align: center;
   width: 100%;
+  color: #fff;
+  background: #28c7fa;
+}
+footer{
+display: flex;
+direction: ltr;
+justify-content: space-around;
+width: 100%;
+background-color: #fff;
+position: fixed;
+bottom: 0;
+
+}
+footer button{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 3vw;
+    flex-direction: row;
+    padding-left: 14vw;
+    padding-right: 14vw;
+
+}
+#whatsapp{
+  background: #25D366;
+}
+#mail{
+  background: #D44638;
+}
+h2{
+  color: #fff;
+  margin-top: -1vw;
+  margin-bottom: -1vw;
+  text-decoration: underline;
 }
