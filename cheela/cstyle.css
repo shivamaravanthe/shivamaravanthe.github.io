@@ -7,12 +7,6 @@ body {
 * {
   box-sizing: border-box;
 }
-/*.header{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}*/
-
 /* Remove margins and padding from the list */
 ul {
   margin: 0;
@@ -29,7 +23,7 @@ ul li {
   color: #000;
   font-size: 18px;
   transition: 0.2s;
-
+  width: 100%;
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -114,6 +108,13 @@ ul li.checked::before {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 1vw;
+
+}
+#prodname,#myInput{
+  width: 40%;
+  box-sizing : border-box;
+  padding: 1vw;
 }
 .abcd{
   display: inline-block;
@@ -155,6 +156,6 @@ footer button{
 h2{
   color: #fff;
   margin-top: -1vw;
-  margin-bottom: -1vw;
+  margin-bottom: -0.5vw;
   text-decoration: underline;
 }
