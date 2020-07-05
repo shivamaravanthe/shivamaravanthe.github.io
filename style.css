@@ -1,3 +1,5 @@
+/*Remove Blue from links*/
+a { color: inherit; }
 /*Style entire body*/
 body{
     font-family: "Noto Sans Kannada Regular", serif;
