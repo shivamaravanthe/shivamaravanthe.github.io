@@ -45,8 +45,8 @@ header{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 30%;
   margin: auto;
-  text-align: justify;
-  font-size: 3.5vw;
+  text-align: center;
+  font-size: 3vw;
 }
 /*Making img take up entire card width*/
 .card img{
