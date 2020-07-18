@@ -146,13 +146,21 @@ function showItems() {
             inputValue=inputValue.toString();
             inputValue=inputValue.substring(inputValue.length - 1,inputValue.length);
             if(inputValue==del)localStorage.removeItem(del);
-
           }
 
           }
         }
       }
     }
+function calprice(p,j) {
+  var x = document.querySelectorAll("p");
+  var y = document.querySelectorAll("input");
+  var z = x.length-1;
+  for (var i = 1; i <= z ; i++) {
+    if(i==j)
+        x[i].innerHTML = "₹"+p*y[i-1].value;
+    }
+}
 function submit(a) {
   var name=document.getElementsByClassName("pname");
   name=name[a-1].innerHTML;
@@ -160,8 +168,17 @@ function submit(a) {
   price=price[a-1].innerHTML;
   var quantity=document.getElementsByName("quantity");
   quantity=quantity[a-1].value;
-  var value=name+'      '+quantity+'       '+price+a;
+  var value=name+Array((20-name.length)*2).fill('\xa0').join('')+quantity+Array((10-price.length)*2).fill('\xa0').join('')+price;
   localStorage.setItem(a,value);
+  var price=document.getElementsByClassName("price");
+  price[a-1].innerHTML="₹0";
+  var x = document.querySelectorAll("p");
+  var y = document.querySelectorAll("input");
+  var z = x.length-1;
+  for (var i = 1; i <= z ; i++) {
+    if(i==a)
+        y[i-1].value=0;
+  }
   var slideSource = document.getElementById('bag');
   slideSource.classList.toggle('fade');
   setTimeout(fadeOut, 500);
@@ -180,7 +197,7 @@ function checknamee() {
   if(name=='')alert("'ನಿಮ್ಮ ಹೆಸರ'ನ್ನು ನಮೂದಿಸಿ");
   else window.open('mailto:somepoorswine@poomail.poo?Subject=Summat%20or%20Other&body=I%20Have%20been%20%20%20for%20a%20massive%20%20%20%20%20%20%20poo');
 }
-function displaycontent(a) {
+function displaycontent(a){
   var content=document.getElementById(a);
 if (content.style.display === "flex") {
   content.style.display = "none";
@@ -195,15 +212,6 @@ for (var j = 1; j <=document.getElementsByClassName("card").length; j++) {
     nocontent.style.display = "flex";
   }
 }
-}
-function calprice(p,j) {
-  var x = document.querySelectorAll("p");
-  var y = document.querySelectorAll("input");
-  var z = x.length-1;
-  for (var i = 1; i <= z ; i++) {
-    if(i==j)
-        x[i].innerHTML = "₹"+p*y[i-1].value;
-  }
 }
 function intialize() {
   if (typeof(Storage) !== "undefined") {
