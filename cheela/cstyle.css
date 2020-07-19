@@ -17,11 +17,11 @@ ul {
 ul li {
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  padding: 10px 10px 15px 0px;
   list-style-type: none;
   background: #eee;
   color: #000;
-  font-size: 18px;
+  font-size: 3vw;
   transition: 0.2s;
   width: 100%;
   /* make the list items unselectable */
@@ -67,7 +67,7 @@ ul li.checked::before {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 12px 16px 12px 16px;
+  padding: 10px 5px 5px 5px;
 }
 
 .close:hover {
