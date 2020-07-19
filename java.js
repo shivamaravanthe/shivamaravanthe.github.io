@@ -3,7 +3,7 @@ function newElement() {
   var array=["0"];
   var inputValue = document.getElementById("myInput").value;
   var prodname = document.getElementById("prodname").value;
-  var text=prodname+Array((40-prodname.length)*2).fill('\xa0').join('')+inputValue+Array((20-inputValue.length)*2).fill('\xa0').join('')+'₹--';
+  var text=prodname+Array(Math.floor((30-name.length)*(2/3))).fill('\xa0').join('')+inputValue+Array((10-inputValue.length)).fill('\xa0').join('')+'₹--';
   var li = document.createElement("li");
   var t = document.createTextNode(text);
   li.appendChild(t);
@@ -243,7 +243,7 @@ function submit(a) {
   price=price[a-1].innerHTML;
   var quantity=document.getElementsByName("quantity");
   quantity=quantity[a-1].value;
-  var value=name+Array((40-name.length)*2).fill('\xa0').join('')+quantity+Array((20-price.length)*2).fill('\xa0').join('')+price;
+  var value=name+Array(Math.floor((30-name.length)*(2/3))).fill('\xa0').join('')+quantity+Array((10-price.length)).fill('\xa0').join('')+price;
   localStorage.setItem(a,value);
   var price=document.getElementsByClassName("price");
   price[a-1].innerHTML="₹0";
