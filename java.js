@@ -3,7 +3,7 @@ function newElement() {
   var array=["0"];
   var inputValue = document.getElementById("myInput").value;
   var prodname = document.getElementById("prodname").value;
-  var text=prodname+" "+inputValue;
+  var text=prodname+Array((40-prodname.length)*2).fill('\xa0').join('')+inputValue+Array((20-inputValue.length)*2).fill('\xa0').join('')+'₹--';
   var li = document.createElement("li");
   var t = document.createTextNode(text);
   li.appendChild(t);
@@ -57,6 +57,42 @@ function newElement() {
 
       }
     }
+    /*Calculate Total*/
+    var x=document.getElementById('myUL');
+    str = x.innerHTML;
+    var array=[];
+    var open=0,amp=0,text='';
+    for (var i = 0; i < str.length; i++){
+      if(str[i]=='<'){open=1;}
+      if(str[i]=='&'){amp=1;}
+      if(open==0&&amp==0){text=text+str[i];}
+      if(str[i]=='>'){open=0;}
+      if(amp==1){if(!(isNaN(str[i+1]))){amp=0;text=text+'₹';}else if (str[i+1] == '₹') {amp=0;}}
+      }
+      var number='',snum=0;
+      var totalP=0;
+      open=0,amp=0;
+    for (var i = 3; i < text.length; i++ ){
+      if(text[i]=="×"&&amp==2){
+        amp=0;
+        open=1;
+        snum=0;
+        if(number!='')
+        totalP=totalP+parseInt(number);
+        number='';
+      }
+      if(text[i]=="₹"&&amp==1){
+        amp=2;snum=1;
+      }
+      if(text[i]=="₹"&&amp==0){
+        amp=1;
+        }
+        if(text[i]!='-'&&text[i]!="₹"&&snum==1){
+        number=number+text[i];
+      }
+      if(open=1){open=0;}
+    }
+    document.getElementById("GrandTotal").innerHTML='Total:-'+totalP;
 }
 function showItems() {
     var retrievedData=localStorage.getItem("AddedDirectly");
@@ -106,9 +142,11 @@ function showItems() {
 
         }
       }
+
+
     }
 
-  for (var i = 1; i < 10; i++) {
+    for (var i = 1; i < 10; i++) {
     var li = document.createElement("li");
     var inputValue = localStorage.getItem(i);
       if(inputValue==null)continue;
@@ -151,6 +189,43 @@ function showItems() {
           }
         }
       }
+      /*Calculate Total*/
+      var x=document.getElementById('myUL');
+      str = x.innerHTML;
+      var array=[];
+      var open=0,amp=0,text='';
+      for (var i = 0; i < str.length; i++){
+        if(str[i]=='<'){open=1;}
+        if(str[i]=='&'){amp=1;}
+        if(open==0&&amp==0){text=text+str[i];}
+        if(str[i]=='>'){open=0;}
+        if(amp==1){if(!(isNaN(str[i+1]))){amp=0;text=text+'₹';}else if (str[i+1] == '₹') {amp=0;}}
+        }
+        var number='',snum=0;
+        var totalP=0;
+        open=0,amp=0;
+      for (var i = 3; i < text.length; i++ ){
+        if(text[i]=="×"&&amp==2){
+          amp=0;
+          open=1;
+          snum=0;
+          if(number!='')
+          totalP=totalP+parseInt(number);
+          number='';
+        }
+        if(text[i]=="₹"&&amp==1){
+          amp=2;snum=1;
+        }
+        if(text[i]=="₹"&&amp==0){
+          amp=1;
+          }
+          if(text[i]!='-'&&text[i]!="₹"&&snum==1){
+          number=number+text[i];
+        }
+        if(open=1){open=0;}
+      }
+      document.getElementById("GrandTotal").innerHTML='Total:-'+totalP;
+   //console.log(totalP);
     }
 function calprice(p,j) {
   var x = document.querySelectorAll("p");
@@ -168,7 +243,7 @@ function submit(a) {
   price=price[a-1].innerHTML;
   var quantity=document.getElementsByName("quantity");
   quantity=quantity[a-1].value;
-  var value=name+Array((20-name.length)*2).fill('\xa0').join('')+quantity+Array((10-price.length)*2).fill('\xa0').join('')+price;
+  var value=name+Array((40-name.length)*2).fill('\xa0').join('')+quantity+Array((20-price.length)*2).fill('\xa0').join('')+price;
   localStorage.setItem(a,value);
   var price=document.getElementsByClassName("price");
   price[a-1].innerHTML="₹0";
@@ -188,9 +263,45 @@ function fadeOut() {
   slideSource.classList.toggle('fade');
 }
 function checknamew() {
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  var today  = new Date();
   var name=document.getElementById("custname").value;
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var x=document.getElementById('myUL');
+  str = x.innerHTML;
+  var array=[];
+  var open=0,amp=0,text='';
+  for (var i = 0; i < str.length; i++){
+    if(str[i]=='<'){open=1;}
+    if(str[i]=='&'){amp=1;}
+    if(open==0&&amp==0){text=text+str[i];}
+    if(str[i]=='>'){open=0;}
+    if(amp==1){if(!(isNaN(str[i+1]))){amp=0;text=text+'₹';}else if (str[i+1] == '₹') {amp=0;}}
+    }
+    var formated="Name:"+name+"%09%09%09%09"+today.toLocaleDateString("en-US", options)+"%0A%0A";
+    open=0,amp=0;
+  for (var i = 3; i < text.length; i++ ){
+    if(text[i]=="×"&&amp==2){
+      amp=0;
+      open=1;
+      formated=formated+"%0A";
+    }
+    if(text[i]=="₹"&&amp==1){
+      amp=2;
+      formated=formated+"%20%20%20%20"+'₹';
+    }
+    if(text[i]=="₹"&&amp==0){
+      amp=1;
+      formated=formated+"%20%20%20%20";
+      }
+    if(text[i]!="₹"&&open!=1){
+      formated=formated+text[i];
+    }
+    if(open=1){open=0;}
+  }
   if(name=='')alert("'ನಿಮ್ಮ ಹೆಸರ'ನ್ನು ನಮೂದಿಸಿ");
-  else window.open('https://wa.me/918660537925?text=Im%20interested%20in%20your%20car%20for%20sale');
+  else window.open('https://wa.me/918660537925?text='+formated);
 }
 function checknamee() {
   var name=document.getElementById("custname").value;
