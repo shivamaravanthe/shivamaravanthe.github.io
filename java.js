@@ -3,8 +3,8 @@ function newElement() {
   var array=["0"];
   var inputValue = document.getElementById("myInput").value;
   var prodname = document.getElementById("prodname").value;
-  var spaceafp=Math.floor(((60-name.length)*2)/(1280/parseFloat(screen.width)));
-  var spaceafiV=Math.floor((30-inputValue.length)*(2/(1280/parseFloat(screen.width))));
+  var spaceafp=25;
+  var spaceafiV=15;
   var text=prodname+Array(spaceafp).fill('\xa0').join('')+inputValue+Array(spaceafiV).fill('\xa0').join('')+'₹--';
   var li = document.createElement("li");
   var t = document.createTextNode(text);
@@ -244,8 +244,8 @@ function submit(a) {
   price=price[a-1].innerHTML;
   var quantity=document.getElementsByName("quantity");
   quantity=quantity[a-1].value;
-  var  fpspace = Math.floor((60-quantity.length)*(2/(1280/parseFloat(screen.width))));
-  var fqspace = Math.floor((30-price.length)*(2/(1280/parseFloat(screen.width))));
+  var  fpspace = 25;
+  var fqspace = 15;
   var value=name+Array(fpspace).fill('\xa0').join('')+quantity+Array(fqspace).fill('\xa0').join('')+price;
   localStorage.setItem(a,value);
   var price=document.getElementsByClassName("price");
