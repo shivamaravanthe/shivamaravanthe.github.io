@@ -3,7 +3,9 @@ function newElement() {
   var array=["0"];
   var inputValue = document.getElementById("myInput").value;
   var prodname = document.getElementById("prodname").value;
-  var text=prodname+Array(Math.floor((30-name.length)*(2/3))).fill('\xa0').join('')+inputValue+Array((10-inputValue.length)).fill('\xa0').join('')+'₹--';
+  var spaceafp=Math.floor(((60-name.length)*2)/(1280/parseFloat(screen.width)));
+  var spaceafiV=Math.floor((30-inputValue.length)*(2/(1280/parseFloat(screen.width))));
+  var text=prodname+Array(spaceafp).fill('\xa0').join('')+inputValue+Array(spaceafiV).fill('\xa0').join('')+'₹--';
   var li = document.createElement("li");
   var t = document.createTextNode(text);
   li.appendChild(t);
@@ -78,7 +80,7 @@ function newElement() {
         open=1;
         snum=0;
         if(number!='')
-        totalP=totalP+parseInt(number);
+        totalP=totalP+parseFloat(number);
         number='';
       }
       if(text[i]=="₹"&&amp==1){
@@ -139,7 +141,6 @@ function showItems() {
           if(inputValue==del)localStorage.removeItem(del);
 
         }
-
         }
       }
 
@@ -185,7 +186,7 @@ function showItems() {
             inputValue=inputValue.substring(inputValue.length - 1,inputValue.length);
             if(inputValue==del)localStorage.removeItem(del);
           }
-
+console.log(del);
           }
         }
       }
@@ -210,7 +211,7 @@ function showItems() {
           open=1;
           snum=0;
           if(number!='')
-          totalP=totalP+parseInt(number);
+          totalP=totalP+parseFloat(number);
           number='';
         }
         if(text[i]=="₹"&&amp==1){
@@ -243,7 +244,9 @@ function submit(a) {
   price=price[a-1].innerHTML;
   var quantity=document.getElementsByName("quantity");
   quantity=quantity[a-1].value;
-  var value=name+Array(Math.floor((30-name.length)*(2/3))).fill('\xa0').join('')+quantity+Array((10-price.length)).fill('\xa0').join('')+price;
+  var  fpspace = Math.floor((60-quantity.length)*(2/(1280/parseFloat(screen.width))));
+  var fqspace = Math.floor((30-price.length)*(2/(1280/parseFloat(screen.width))));
+  var value=name+Array(fpspace).fill('\xa0').join('')+quantity+Array(fqspace).fill('\xa0').join('')+price;
   localStorage.setItem(a,value);
   var price=document.getElementsByClassName("price");
   price[a-1].innerHTML="₹0";
@@ -304,9 +307,46 @@ function checknamew() {
   else window.open('https://wa.me/918660537925?text='+formated);
 }
 function checknamee() {
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  var today  = new Date();
+  var name=document.getElementById("custname").value;
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var x=document.getElementById('myUL');
+  str = x.innerHTML;
+  var array=[];
+  var open=0,amp=0,text='';
+  for (var i = 0; i < str.length; i++){
+    if(str[i]=='<'){open=1;}
+    if(str[i]=='&'){amp=1;}
+    if(open==0&&amp==0){text=text+str[i];}
+    if(str[i]=='>'){open=0;}
+    if(amp==1){if(!(isNaN(str[i+1]))){amp=0;text=text+'₹';}else if (str[i+1] == '₹') {amp=0;}}
+    }
+    var formated="Name:"+name+"%09%09%09%09"+today.toLocaleDateString("en-US", options)+"%0A%0A";
+    open=0,amp=0;
+  for (var i = 3; i < text.length; i++ ){
+    if(text[i]=="×"&&amp==2){
+      amp=0;
+      open=1;
+      formated=formated+"%0A";
+    }
+    if(text[i]=="₹"&&amp==1){
+      amp=2;
+      formated=formated+"%20%20%20%20"+'₹';
+    }
+    if(text[i]=="₹"&&amp==0){
+      amp=1;
+      formated=formated+"%20%20%20%20";
+      }
+    if(text[i]!="₹"&&open!=1){
+      formated=formated+text[i];
+    }
+    if(open=1){open=0;}
+  }
   var name=document.getElementById("custname").value;
   if(name=='')alert("'ನಿಮ್ಮ ಹೆಸರ'ನ್ನು ನಮೂದಿಸಿ");
-  else window.open('mailto:somepoorswine@poomail.poo?Subject=Summat%20or%20Other&body=I%20Have%20been%20%20%20for%20a%20massive%20%20%20%20%20%20%20poo');
+  else window.open('mailto:vshivanand2@gmail.com?Subject=Bill&body='+formated);
 }
 function displaycontent(a){
   var content=document.getElementById(a);
