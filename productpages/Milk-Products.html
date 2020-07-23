@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow: 400' rel='stylesheet' type='text/css'>
+       <link rel="stylesheet" href="../style.css">
+       <script type="text/javascript" src="../java.js"></script>
+       <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+   </head>
+
+   <body onload="intialize()">
+
+       <header>
+           <p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
+           <a href="../cheela/cheela.html">
+           <img src="../cheela/cheela.png" alt="ಚೀಲ" id="bag" ></a>
+           <span id="NoItemsAdded">0</span>
+       </header>
+
+       <div id="home">
+
+					<div class="row">
+						<div class="card" onclick="displaycontent(1)">
+							<img src="../images/productimgs/Milk-Products/Butter Milk 200ml.png" alt="Internet Slow Eth">
+							<span class="pname">Butter Milk 200ml</span> 
+							<span>₹7</span> 
+							<div class="content" id="1"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(7,1)">
+								<p class="price">₹0</p>
+								<button onclick="submit(1)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(2)">
+							<img src="../images/productimgs/Milk-Products/Curd 415g.png" alt="Internet Slow Eth">
+							<span class="pname">Curd 415g</span> 
+							<span>₹21</span> 
+							<div class="content" id="2"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(21,2)">
+								<p class="price">₹0</p>
+								<button onclick="submit(2)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(3)">
+							<img src="../images/productimgs/Milk-Products/Milk.png" alt="Internet Slow Eth">
+							<span class="pname">Milk</span> 
+							<span>₹21</span> 
+							<div class="content" id="3"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(21,3)">
+								<p class="price">₹0</p>
+								<button onclick="submit(3)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(4)">
+							<img src="../images/productimgs/Milk-Products/Amulya Halhudi Rs10.png" alt="Internet Slow Eth">
+							<span class="pname">Amulya Halhudi Rs10</span> 
+							<span>₹10</span> 
+							<div class="content" id="4"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,4)">
+								<p class="price">₹0</p>
+								<button onclick="submit(4)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(5)">
+							<img src="../images/productimgs/Milk-Products/Amulya Halhudi Box.png" alt="Internet Slow Eth">
+							<span class="pname">Amulya Halhudi Box</span> 
+							<span>₹85</span> 
+							<div class="content" id="5"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(85,5)">
+								<p class="price">₹0</p>
+								<button onclick="submit(5)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(6)">
+							<img src="../images/productimgs/Milk-Products/Amulspray Halhudi.png" alt="Internet Slow Eth">
+							<span class="pname">Amulspray Halhudi</span> 
+							<span>₹205</span> 
+							<div class="content" id="6"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(205,6)">
+								<p class="price">₹0</p>
+								<button onclick="submit(6)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+       </div>
+  </body>
+</html>

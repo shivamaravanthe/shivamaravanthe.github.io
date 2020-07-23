@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow: 400' rel='stylesheet' type='text/css'>
+       <link rel="stylesheet" href="../style.css">
+       <script type="text/javascript" src="../java.js"></script>
+       <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+   </head>
+
+   <body onload="intialize()">
+
+       <header>
+           <p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
+           <a href="../cheela/cheela.html">
+           <img src="../cheela/cheela.png" alt="ಚೀಲ" id="bag" ></a>
+           <span id="NoItemsAdded">0</span>
+       </header>
+
+       <div id="home">
+
+					<div class="row">
+						<div class="card" onclick="displaycontent(1)">
+							<img src="../images/productimgs/Sanitary-Pads/Sofy Bodyfit.png" alt="Internet Slow Eth">
+							<span class="pname">Sofy Bodyfit</span> 
+							<span>₹25</span> 
+							<div class="content" id="1"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(25,1)">
+								<p class="price">₹0</p>
+								<button onclick="submit(1)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(2)">
+							<img src="../images/productimgs/Sanitary-Pads/Whisper Ultra XL 20 Pads.png" alt="Internet Slow Eth">
+							<span class="pname">Whisper Ultra XL 20 Pads</span> 
+							<span>₹123</span> 
+							<div class="content" id="2"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(123,2)">
+								<p class="price">₹0</p>
+								<button onclick="submit(2)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(3)">
+							<img src="../images/productimgs/Sanitary-Pads/Carefree XL.png" alt="Internet Slow Eth">
+							<span class="pname">Carefree XL</span> 
+							<span>₹95</span> 
+							<div class="content" id="3"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(95,3)">
+								<p class="price">₹0</p>
+								<button onclick="submit(3)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(4)">
+							<img src="../images/productimgs/Sanitary-Pads/Stayfree DryMax XL 14p.png" alt="Internet Slow Eth">
+							<span class="pname">Stayfree DryMax XL 14p</span> 
+							<span>₹175</span> 
+							<div class="content" id="4"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(175,4)">
+								<p class="price">₹0</p>
+								<button onclick="submit(4)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(5)">
+							<img src="../images/productimgs/Sanitary-Pads/Stayfree DryMax XL 28p.png" alt="Internet Slow Eth">
+							<span class="pname">Stayfree DryMax XL 28p</span> 
+							<span>₹330</span> 
+							<div class="content" id="5"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(330,5)">
+								<p class="price">₹0</p>
+								<button onclick="submit(5)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(6)">
+							<img src="../images/productimgs/Sanitary-Pads/Whisper Choice.png" alt="Internet Slow Eth">
+							<span class="pname">Whisper Choice</span> 
+							<span>₹30</span> 
+							<div class="content" id="6"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(30,6)">
+								<p class="price">₹0</p>
+								<button onclick="submit(6)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(7)">
+							<img src="../images/productimgs/Sanitary-Pads/Stayfree Secure XL.png" alt="Internet Slow Eth">
+							<span class="pname">Stayfree Secure XL</span> 
+							<span>₹35</span> 
+							<div class="content" id="7"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(35,7)">
+								<p class="price">₹0</p>
+								<button onclick="submit(7)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(8)">
+							<img src="../images/productimgs/Sanitary-Pads/Sofy Bodyfit EL.png" alt="Internet Slow Eth">
+							<span class="pname">Sofy Bodyfit EL</span> 
+							<span>₹39</span> 
+							<div class="content" id="8"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(39,8)">
+								<p class="price">₹0</p>
+								<button onclick="submit(8)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(9)">
+							<img src="../images/productimgs/Sanitary-Pads/Whisper Ultra XL 6 Pads.png" alt="Internet Slow Eth">
+							<span class="pname">Whisper Ultra XL 6 Pads</span> 
+							<span>₹40</span> 
+							<div class="content" id="9"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(40,9)">
+								<p class="price">₹0</p>
+								<button onclick="submit(9)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+       </div>
+  </body>
+</html>

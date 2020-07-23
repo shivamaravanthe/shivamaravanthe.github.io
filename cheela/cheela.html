@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../java.js"></script>
+  </head>
+   <body onload="showItems()">
+
+    <h1 id="pageTitle">ಪಟ್ಟಿ</h1>
+
+
+    <div id="myDIV" class="header">
+
+      <div class="prodname">
+              <input type="text" id="prodname" placeholder="ಮತ್ತೆ ಎಂತ ಬೇಕು">
+              <input type="text" id="myInput" placeholder="ಎಷ್ಟು ಬೇಕು ">
+      </div>
+      <button type="button" name="button" class="addBtn" onclick="newElement()">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+    </div>
+    <!--<button type="button" name="button" onclick="clean()">clean</button>-->
+
+    <ul id="myUL">
+    </ul>
+    <p style="font-size:3vw;">&nbsp;</p>
+
+
+    <footer>
+      <p id="GrandTotal" style="font-size:4vw;font-weight: bold;margin: 0;padding-top: 3vw;">Total:-</p>
+      <div>
+        <button id="whatsapp" onclick="checknamew()">ಕಳುಹಿಸಿ&nbsp;&nbsp;<i class="fa fa-whatsapp" style="font-size:6vw"></i></button>
+      </div>
+      <!--<div>
+        <button id="mail" onclick="checknamee()">ಕಳುಹಿಸಿ&#x1F4E7;</button>
+      </div>-->
+
+    </footer>
+
+
+   </body>
+  </html>
