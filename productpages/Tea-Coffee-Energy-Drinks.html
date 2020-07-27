@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow: 400' rel='stylesheet' type='text/css'>
+       <link rel="stylesheet" href="style.css">
+       <script type="text/javascript" src="java.js"></script>
+       <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+   </head>
+
+   <body>
+
+       <header>
+           <p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
+           <a href="../cheela/cheela.html">
+           <img src="../cheela/cheela.png" alt="ಚೀಲ" id="bag" ></a>
+           <span id="NoItemsAdded">0</span>
+       </header>
+
+       <div id="home">
+
+					<div class="row">
+						<div class="card" onclick="displaycontent(1)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Amar Dust Tea.png" alt="Internet Slow Eth">
+							<span class="pname">Amar Dust Tea</span> 
+							<span>₹200</span> 
+							<div class="content" id="1"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(200,1)">
+								<p class="price">₹0</p>
+								<button onclick="submit(1)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(2)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Amar Loose Tea.png" alt="Internet Slow Eth">
+							<span class="pname">Amar Loose Tea</span> 
+							<span>₹</span> 
+							<div class="content" id="2"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,2)">
+								<p class="price">₹0</p>
+								<button onclick="submit(2)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(3)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Amar Tea Tub.png" alt="Internet Slow Eth">
+							<span class="pname">Amar Tea Tub</span> 
+							<span>₹220</span> 
+							<div class="content" id="3"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(220,3)">
+								<p class="price">₹0</p>
+								<button onclick="submit(3)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(4)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/AVT Darbari Tea.png" alt="Internet Slow Eth">
+							<span class="pname">AVT Darbari Tea</span> 
+							<span>₹</span> 
+							<div class="content" id="4"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,4)">
+								<p class="price">₹0</p>
+								<button onclick="submit(4)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(5)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/AVT Darbari Tea S.png" alt="Internet Slow Eth">
+							<span class="pname">AVT Darbari Tea S</span> 
+							<span>₹25</span> 
+							<div class="content" id="5"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(25,5)">
+								<p class="price">₹0</p>
+								<button onclick="submit(5)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(6)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/AVT Darbari Tea B.png" alt="Internet Slow Eth">
+							<span class="pname">AVT Darbari Tea B</span> 
+							<span>₹</span> 
+							<div class="content" id="6"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,6)">
+								<p class="price">₹0</p>
+								<button onclick="submit(6)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(7)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/AVT Tea B.png" alt="Internet Slow Eth">
+							<span class="pname">AVT Tea B</span> 
+							<span>₹240</span> 
+							<div class="content" id="7"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(240,7)">
+								<p class="price">₹0</p>
+								<button onclick="submit(7)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(8)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/AVT Tea.png" alt="Internet Slow Eth">
+							<span class="pname">AVT Tea</span> 
+							<span>₹70</span> 
+							<div class="content" id="8"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(70,8)">
+								<p class="price">₹0</p>
+								<button onclick="submit(8)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(9)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/AVT Tea Premium.png" alt="Internet Slow Eth">
+							<span class="pname">AVT Tea Premium</span> 
+							<span>₹110</span> 
+							<div class="content" id="9"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,9)">
+								<p class="price">₹0</p>
+								<button onclick="submit(9)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(10)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Horlicks Women's.png" alt="Internet Slow Eth">
+							<span class="pname">Horlicks Women's</span> 
+							<span>₹10</span> 
+							<div class="content" id="10"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,10)">
+								<p class="price">₹0</p>
+								<button onclick="submit(10)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(11)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Boost 200g.png" alt="Internet Slow Eth">
+							<span class="pname">Boost 200g</span> 
+							<span>₹110</span> 
+							<div class="content" id="11"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,11)">
+								<p class="price">₹0</p>
+								<button onclick="submit(11)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(12)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Boost 500g.png" alt="Internet Slow Eth">
+							<span class="pname">Boost 500g</span> 
+							<span>₹247</span> 
+							<div class="content" id="12"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(247,12)">
+								<p class="price">₹0</p>
+								<button onclick="submit(12)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(13)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Boost 5rs.png" alt="Internet Slow Eth">
+							<span class="pname">Boost 5rs</span> 
+							<span>₹5</span> 
+							<div class="content" id="13"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(5,13)">
+								<p class="price">₹0</p>
+								<button onclick="submit(13)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(14)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Brooke Bond 3 Roses.png" alt="Internet Slow Eth">
+							<span class="pname">Brooke Bond 3 Roses</span> 
+							<span>₹145</span> 
+							<div class="content" id="14"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(145,14)">
+								<p class="price">₹0</p>
+								<button onclick="submit(14)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(15)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Brooke Bond Taaza.png" alt="Internet Slow Eth">
+							<span class="pname">Brooke Bond Taaza</span> 
+							<span>₹20</span> 
+							<div class="content" id="15"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(20,15)">
+								<p class="price">₹0</p>
+								<button onclick="submit(15)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(16)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Bru Instant.png" alt="Internet Slow Eth">
+							<span class="pname">Bru Instant</span> 
+							<span>₹180</span> 
+							<div class="content" id="16"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(180,16)">
+								<p class="price">₹0</p>
+								<button onclick="submit(16)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(17)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Bru Instant Coffee 1rs.png" alt="Internet Slow Eth">
+							<span class="pname">Bru Instant Coffee 1rs</span> 
+							<span>₹1</span> 
+							<div class="content" id="17"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(1,17)">
+								<p class="price">₹0</p>
+								<button onclick="submit(17)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(18)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Cadbury Bourn Vita 200g.png" alt="Internet Slow Eth">
+							<span class="pname">Cadbury Bourn Vita 200g</span> 
+							<span>₹110</span> 
+							<div class="content" id="18"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,18)">
+								<p class="price">₹0</p>
+								<button onclick="submit(18)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(19)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Devagiri Tea 250g.png" alt="Internet Slow Eth">
+							<span class="pname">Devagiri Tea 250g</span> 
+							<span>₹</span> 
+							<div class="content" id="19"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,19)">
+								<p class="price">₹0</p>
+								<button onclick="submit(19)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(20)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Devagiri Tea 500g.png" alt="Internet Slow Eth">
+							<span class="pname">Devagiri Tea 500g</span> 
+							<span>₹</span> 
+							<div class="content" id="20"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,20)">
+								<p class="price">₹0</p>
+								<button onclick="submit(20)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(21)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Glucose D 125g.png" alt="Internet Slow Eth">
+							<span class="pname">Glucose D 125g</span> 
+							<span>₹27</span> 
+							<div class="content" id="21"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(27,21)">
+								<p class="price">₹0</p>
+								<button onclick="submit(21)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(22)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Glucose D 250g.png" alt="Internet Slow Eth">
+							<span class="pname">Glucose D 250g</span> 
+							<span>₹58</span> 
+							<div class="content" id="22"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(58,22)">
+								<p class="price">₹0</p>
+								<button onclick="submit(22)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(23)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Glucose D 500g.png" alt="Internet Slow Eth">
+							<span class="pname">Glucose D 500g</span> 
+							<span>₹105</span> 
+							<div class="content" id="23"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(105,23)">
+								<p class="price">₹0</p>
+								<button onclick="submit(23)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(24)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/GRB Badam Mix 200g.png" alt="Internet Slow Eth">
+							<span class="pname">GRB Badam Mix 200g</span> 
+							<span>₹115</span> 
+							<div class="content" id="24"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(115,24)">
+								<p class="price">₹0</p>
+								<button onclick="submit(24)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(25)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Horlicks 5rs.png" alt="Internet Slow Eth">
+							<span class="pname">Horlicks 5rs</span> 
+							<span>₹5</span> 
+							<div class="content" id="25"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(5,25)">
+								<p class="price">₹0</p>
+								<button onclick="submit(25)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(26)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Horlicks Chocolate 200g.png" alt="Internet Slow Eth">
+							<span class="pname">Horlicks Chocolate 200g</span> 
+							<span>₹105</span> 
+							<div class="content" id="26"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(105,26)">
+								<p class="price">₹0</p>
+								<button onclick="submit(26)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(27)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Horlicks Chocolate 500g.png" alt="Internet Slow Eth">
+							<span class="pname">Horlicks Chocolate 500g</span> 
+							<span>₹221</span> 
+							<div class="content" id="27"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(221,27)">
+								<p class="price">₹0</p>
+								<button onclick="submit(27)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(28)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Horlicks Classic Malt 200g.png" alt="Internet Slow Eth">
+							<span class="pname">Horlicks Classic Malt 200g</span> 
+							<span>₹111</span> 
+							<div class="content" id="28"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(111,28)">
+								<p class="price">₹0</p>
+								<button onclick="submit(28)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(29)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Horlicks Classic Malt 500g.png" alt="Internet Slow Eth">
+							<span class="pname">Horlicks Classic Malt 500g</span> 
+							<span>₹242</span> 
+							<div class="content" id="29"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(242,29)">
+								<p class="price">₹0</p>
+								<button onclick="submit(29)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(30)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Horlicks Junior 500g.png" alt="Internet Slow Eth">
+							<span class="pname">Horlicks Junior 500g</span> 
+							<span>₹288</span> 
+							<div class="content" id="30"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(288,30)">
+								<p class="price">₹0</p>
+								<button onclick="submit(30)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(31)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Horlicks Kesar Badam 400g.png" alt="Internet Slow Eth">
+							<span class="pname">Horlicks Kesar Badam 400g</span> 
+							<span>₹280</span> 
+							<div class="content" id="31"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(280,31)">
+								<p class="price">₹0</p>
+								<button onclick="submit(31)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(32)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Horlicks Women's.png" alt="Internet Slow Eth">
+							<span class="pname">Horlicks Women's</span> 
+							<span>₹299</span> 
+							<div class="content" id="32"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(299,32)">
+								<p class="price">₹0</p>
+								<button onclick="submit(32)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(33)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Kanan Devan.png" alt="Internet Slow Eth">
+							<span class="pname">Kanan Devan</span> 
+							<span>₹72</span> 
+							<div class="content" id="33"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(72,33)">
+								<p class="price">₹0</p>
+								<button onclick="submit(33)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(34)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Kanan Devan S.png" alt="Internet Slow Eth">
+							<span class="pname">Kanan Devan S</span> 
+							<span>₹25</span> 
+							<div class="content" id="34"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(25,34)">
+								<p class="price">₹0</p>
+								<button onclick="submit(34)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(35)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Kanan Devan Strong.png" alt="Internet Slow Eth">
+							<span class="pname">Kanan Devan Strong</span> 
+							<span>₹</span> 
+							<div class="content" id="35"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,35)">
+								<p class="price">₹0</p>
+								<button onclick="submit(35)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(36)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Laxmi Coffee 50g.png" alt="Internet Slow Eth">
+							<span class="pname">Laxmi Coffee 50g</span> 
+							<span>₹14</span> 
+							<div class="content" id="36"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(14,36)">
+								<p class="price">₹0</p>
+								<button onclick="submit(36)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(37)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Lipton Green Tea.png" alt="Internet Slow Eth">
+							<span class="pname">Lipton Green Tea</span> 
+							<span>₹</span> 
+							<div class="content" id="37"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,37)">
+								<p class="price">₹0</p>
+								<button onclick="submit(37)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(38)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Manna Health Mix 250g.png" alt="Internet Slow Eth">
+							<span class="pname">Manna Health Mix 250g</span> 
+							<span>₹140</span> 
+							<div class="content" id="38"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(140,38)">
+								<p class="price">₹0</p>
+								<button onclick="submit(38)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(39)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/MTR Badam Drink Mix 500g.png" alt="Internet Slow Eth">
+							<span class="pname">MTR Badam Drink Mix 500g</span> 
+							<span>₹250</span> 
+							<div class="content" id="39"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(250,39)">
+								<p class="price">₹0</p>
+								<button onclick="submit(39)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(40)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/MTR Badam Mix 100g.png" alt="Internet Slow Eth">
+							<span class="pname">MTR Badam Mix 100g</span> 
+							<span>₹70</span> 
+							<div class="content" id="40"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(70,40)">
+								<p class="price">₹0</p>
+								<button onclick="submit(40)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(41)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/MTR Badam Mix 200g.png" alt="Internet Slow Eth">
+							<span class="pname">MTR Badam Mix 200g</span> 
+							<span>₹120</span> 
+							<div class="content" id="41"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(120,41)">
+								<p class="price">₹0</p>
+								<button onclick="submit(41)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(42)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Nestle Milo 400g.png" alt="Internet Slow Eth">
+							<span class="pname">Nestle Milo 400g</span> 
+							<span>₹215</span> 
+							<div class="content" id="42"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(215,42)">
+								<p class="price">₹0</p>
+								<button onclick="submit(42)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(43)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Ragavendra Badam Malt.png" alt="Internet Slow Eth">
+							<span class="pname">Ragavendra Badam Malt</span> 
+							<span>₹32</span> 
+							<div class="content" id="43"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(32,43)">
+								<p class="price">₹0</p>
+								<button onclick="submit(43)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(44)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Ragavendra Ragi Malt.png" alt="Internet Slow Eth">
+							<span class="pname">Ragavendra Ragi Malt</span> 
+							<span>₹</span> 
+							<div class="content" id="44"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,44)">
+								<p class="price">₹0</p>
+								<button onclick="submit(44)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(45)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Red Label 100g.png" alt="Internet Slow Eth">
+							<span class="pname">Red Label 100g</span> 
+							<span>₹35</span> 
+							<div class="content" id="45"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(35,45)">
+								<p class="price">₹0</p>
+								<button onclick="submit(45)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(46)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Red Label 250g.png" alt="Internet Slow Eth">
+							<span class="pname">Red Label 250g</span> 
+							<span>₹115</span> 
+							<div class="content" id="46"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(115,46)">
+								<p class="price">₹0</p>
+								<button onclick="submit(46)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(47)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Red Label 500g.png" alt="Internet Slow Eth">
+							<span class="pname">Red Label 500g</span> 
+							<span>₹240</span> 
+							<div class="content" id="47"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(240,47)">
+								<p class="price">₹0</p>
+								<button onclick="submit(47)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(48)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Red Label Natural Care.png" alt="Internet Slow Eth">
+							<span class="pname">Red Label Natural Care</span> 
+							<span>₹52</span> 
+							<div class="content" id="48"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(52,48)">
+								<p class="price">₹0</p>
+								<button onclick="submit(48)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(49)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Red Label Natural Care B.png" alt="Internet Slow Eth">
+							<span class="pname">Red Label Natural Care B</span> 
+							<span>₹135</span> 
+							<div class="content" id="49"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(135,49)">
+								<p class="price">₹0</p>
+								<button onclick="submit(49)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(50)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Society Tea.png" alt="Internet Slow Eth">
+							<span class="pname">Society Tea</span> 
+							<span>₹115</span> 
+							<div class="content" id="50"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(115,50)">
+								<p class="price">₹0</p>
+								<button onclick="submit(50)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(51)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Vasavi Coffee.png" alt="Internet Slow Eth">
+							<span class="pname">Vasavi Coffee</span> 
+							<span>₹85</span> 
+							<div class="content" id="51"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(85,51)">
+								<p class="price">₹0</p>
+								<button onclick="submit(51)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(52)">
+							<img src="../images/productimgs/Tea-Coffee-Energy-Drinks/Waterfall Loose Tea.png" alt="Internet Slow Eth">
+							<span class="pname">Waterfall Loose Tea</span> 
+							<span>₹</span> 
+							<div class="content" id="52"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,52)">
+								<p class="price">₹0</p>
+								<button onclick="submit(52)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+       </div>
+  </body>
+</html>

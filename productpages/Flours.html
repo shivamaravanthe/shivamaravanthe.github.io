@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow: 400' rel='stylesheet' type='text/css'>
+       <link rel="stylesheet" href="style.css">
+       <script type="text/javascript" src="java.js"></script>
+       <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+   </head>
+
+   <body>
+
+       <header>
+           <p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
+           <a href="../cheela/cheela.html">
+           <img src="../cheela/cheela.png" alt="ಚೀಲ" id="bag" ></a>
+           <span id="NoItemsAdded">0</span>
+       </header>
+
+       <div id="home">
+
+					<div class="row">
+						<div class="card" onclick="displaycontent(1)">
+							<img src="../images/productimgs/Flours/Annapurna Godhi Hittu.png" alt="Internet Slow Eth">
+							<span class="pname">Annapurna Godhi Hittu</span> 
+							<span>₹</span> 
+							<div class="content" id="1"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,1)">
+								<p class="price">₹0</p>
+								<button onclick="submit(1)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(2)">
+							<img src="../images/productimgs/Flours/Annapurna Godhi Hittu 5kg.png" alt="Internet Slow Eth">
+							<span class="pname">Annapurna Godhi Hittu 5kg</span> 
+							<span>₹260</span> 
+							<div class="content" id="2"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(260,2)">
+								<p class="price">₹0</p>
+								<button onclick="submit(2)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(3)">
+							<img src="../images/productimgs/Flours/Ashirwad Godhi Hittu.png" alt="Internet Slow Eth">
+							<span class="pname">Ashirwad Godhi Hittu</span> 
+							<span>₹</span> 
+							<div class="content" id="3"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,3)">
+								<p class="price">₹0</p>
+								<button onclick="submit(3)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(4)">
+							<img src="../images/productimgs/Flours/Ashirwad Godhi Hittu 5kg.png" alt="Internet Slow Eth">
+							<span class="pname">Ashirwad Godhi Hittu 5kg</span> 
+							<span>₹260</span> 
+							<div class="content" id="4"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(260,4)">
+								<p class="price">₹0</p>
+								<button onclick="submit(4)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(5)">
+							<img src="../images/productimgs/Flours/Balaji Akki Hittu.png" alt="Internet Slow Eth">
+							<span class="pname">Balaji Akki Hittu</span> 
+							<span>₹</span> 
+							<div class="content" id="5"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,5)">
+								<p class="price">₹0</p>
+								<button onclick="submit(5)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(6)">
+							<img src="../images/productimgs/Flours/Corn Flour.png" alt="Internet Slow Eth">
+							<span class="pname">Corn Flour</span> 
+							<span>₹</span> 
+							<div class="content" id="6"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,6)">
+								<p class="price">₹0</p>
+								<button onclick="submit(6)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(7)">
+							<img src="../images/productimgs/Flours/Kadle Hittu.png" alt="Internet Slow Eth">
+							<span class="pname">Kadle Hittu</span> 
+							<span>₹</span> 
+							<div class="content" id="7"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,7)">
+								<p class="price">₹0</p>
+								<button onclick="submit(7)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(8)">
+							<img src="../images/productimgs/Flours/Kasturi Godhi Rava.png" alt="Internet Slow Eth">
+							<span class="pname">Kasturi Godhi Rava</span> 
+							<span>₹</span> 
+							<div class="content" id="8"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,8)">
+								<p class="price">₹0</p>
+								<button onclick="submit(8)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(9)">
+							<img src="../images/productimgs/Flours/Maida.png" alt="Internet Slow Eth">
+							<span class="pname">Maida</span> 
+							<span>₹</span> 
+							<div class="content" id="9"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,9)">
+								<p class="price">₹0</p>
+								<button onclick="submit(9)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(10)">
+							<img src="../images/productimgs/Flours/Patanjali Godhi Hittu.png" alt="Internet Slow Eth">
+							<span class="pname">Patanjali Godhi Hittu</span> 
+							<span>₹49</span> 
+							<div class="content" id="10"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(49,10)">
+								<p class="price">₹0</p>
+								<button onclick="submit(10)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(11)">
+							<img src="../images/productimgs/Flours/Patri Hittu.png" alt="Internet Slow Eth">
+							<span class="pname">Patri Hittu</span> 
+							<span>₹67</span> 
+							<div class="content" id="11"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(67,11)">
+								<p class="price">₹0</p>
+								<button onclick="submit(11)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(12)">
+							<img src="../images/productimgs/Flours/Pattabhi Godhi Kadi.png" alt="Internet Slow Eth">
+							<span class="pname">Pattabhi Godhi Kadi</span> 
+							<span>₹</span> 
+							<div class="content" id="12"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,12)">
+								<p class="price">₹0</p>
+								<button onclick="submit(12)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(13)">
+							<img src="../images/productimgs/Flours/Pattabhi Ragi Hittu.png" alt="Internet Slow Eth">
+							<span class="pname">Pattabhi Ragi Hittu</span> 
+							<span>₹</span> 
+							<div class="content" id="13"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,13)">
+								<p class="price">₹0</p>
+								<button onclick="submit(13)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(14)">
+							<img src="../images/productimgs/Flours/Rava.png" alt="Internet Slow Eth">
+							<span class="pname">Rava</span> 
+							<span>₹</span> 
+							<div class="content" id="14"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,14)">
+								<p class="price">₹0</p>
+								<button onclick="submit(14)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(15)">
+							<img src="../images/productimgs/Flours/Samrat Kadle Hittu 200g.png" alt="Internet Slow Eth">
+							<span class="pname">Samrat Kadle Hittu 200g</span> 
+							<span>₹20</span> 
+							<div class="content" id="15"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(20,15)">
+								<p class="price">₹0</p>
+								<button onclick="submit(15)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(16)">
+							<img src="../images/productimgs/Flours/Samrat Kadle Hittu 500g.png" alt="Internet Slow Eth">
+							<span class="pname">Samrat Kadle Hittu 500g</span> 
+							<span>₹45</span> 
+							<div class="content" id="16"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(45,16)">
+								<p class="price">₹0</p>
+								<button onclick="submit(16)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(17)">
+							<img src="../images/productimgs/Flours/Samrat Rava.png" alt="Internet Slow Eth">
+							<span class="pname">Samrat Rava</span> 
+							<span>₹35</span> 
+							<div class="content" id="17"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(35,17)">
+								<p class="price">₹0</p>
+								<button onclick="submit(17)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(18)">
+							<img src="../images/productimgs/Flours/Samrat Sooji.png" alt="Internet Slow Eth">
+							<span class="pname">Samrat Sooji</span> 
+							<span>₹24</span> 
+							<div class="content" id="18"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(24,18)">
+								<p class="price">₹0</p>
+								<button onclick="submit(18)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(19)">
+							<img src="../images/productimgs/Flours/Silver Coin Godhi Hittu 5kg.png" alt="Internet Slow Eth">
+							<span class="pname">Silver Coin Godhi Hittu 5kg</span> 
+							<span>₹190</span> 
+							<div class="content" id="19"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(190,19)">
+								<p class="price">₹0</p>
+								<button onclick="submit(19)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(20)">
+							<img src="../images/productimgs/Flours/Vishwas Akki Rava.png" alt="Internet Slow Eth">
+							<span class="pname">Vishwas Akki Rava</span> 
+							<span>₹46</span> 
+							<div class="content" id="20"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(46,20)">
+								<p class="price">₹0</p>
+								<button onclick="submit(20)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+       </div>
+  </body>
+</html>

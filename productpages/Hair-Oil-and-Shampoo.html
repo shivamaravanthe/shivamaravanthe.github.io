@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow: 400' rel='stylesheet' type='text/css'>
+       <link rel="stylesheet" href="style.css">
+       <script type="text/javascript" src="java.js"></script>
+       <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+   </head>
+
+   <body>
+
+       <header>
+           <p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
+           <a href="../cheela/cheela.html">
+           <img src="../cheela/cheela.png" alt="ಚೀಲ" id="bag" ></a>
+           <span id="NoItemsAdded">0</span>
+       </header>
+
+       <div id="home">
+
+					<div class="row">
+						<div class="card" onclick="displaycontent(1)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Chik Black 35ml.png" alt="Internet Slow Eth">
+							<span class="pname">Chik Black 35ml</span> 
+							<span>₹10</span> 
+							<div class="content" id="1"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,1)">
+								<p class="price">₹0</p>
+								<button onclick="submit(1)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(2)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Clear Anti Dandruff 170ml.png" alt="Internet Slow Eth">
+							<span class="pname">Clear Anti Dandruff 170ml</span> 
+							<span>₹140</span> 
+							<div class="content" id="2"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(140,2)">
+								<p class="price">₹0</p>
+								<button onclick="submit(2)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(3)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Clear Anti Dandruff 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Clear Anti Dandruff 80ml</span> 
+							<span>₹65</span> 
+							<div class="content" id="3"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(65,3)">
+								<p class="price">₹0</p>
+								<button onclick="submit(3)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(4)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Clear Anti Dandruff Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Clear Anti Dandruff Sachet</span> 
+							<span>₹1.5</span> 
+							<div class="content" id="4"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(1.5,4)">
+								<p class="price">₹0</p>
+								<button onclick="submit(4)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(5)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Clinic Plus Anti Dandruff 175ml.png" alt="Internet Slow Eth">
+							<span class="pname">Clinic Plus Anti Dandruff 175ml</span> 
+							<span>₹84</span> 
+							<div class="content" id="5"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(84,5)">
+								<p class="price">₹0</p>
+								<button onclick="submit(5)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(6)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Clinic Plus Anti Dandruff 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Clinic Plus Anti Dandruff 80ml</span> 
+							<span>₹45</span> 
+							<div class="content" id="6"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(45,6)">
+								<p class="price">₹0</p>
+								<button onclick="submit(6)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(7)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Clinic Plus Long and Strong 175ml.png" alt="Internet Slow Eth">
+							<span class="pname">Clinic Plus Long and Strong 175ml</span> 
+							<span>₹84</span> 
+							<div class="content" id="7"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(84,7)">
+								<p class="price">₹0</p>
+								<button onclick="submit(7)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(8)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Clinic Plus Long and Strong 340ml.png" alt="Internet Slow Eth">
+							<span class="pname">Clinic Plus Long and Strong 340ml</span> 
+							<span>₹159</span> 
+							<div class="content" id="8"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(159,8)">
+								<p class="price">₹0</p>
+								<button onclick="submit(8)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(9)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Clinic Plus Long and Strong 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Clinic Plus Long and Strong 80ml</span> 
+							<span>₹39</span> 
+							<div class="content" id="9"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(39,9)">
+								<p class="price">₹0</p>
+								<button onclick="submit(9)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(10)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Clinic Plus Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Clinic Plus Sachet</span> 
+							<span>₹1</span> 
+							<div class="content" id="10"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(1,10)">
+								<p class="price">₹0</p>
+								<button onclick="submit(10)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(11)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dabur Amla Hair Oil 180ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dabur Amla Hair Oil 180ml</span> 
+							<span>₹88</span> 
+							<div class="content" id="11"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(88,11)">
+								<p class="price">₹0</p>
+								<button onclick="submit(11)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(12)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dabur Amla Hair Oil 25ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dabur Amla Hair Oil 25ml</span> 
+							<span>₹10</span> 
+							<div class="content" id="12"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,12)">
+								<p class="price">₹0</p>
+								<button onclick="submit(12)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(13)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dabur Amla Hair Oil 275ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dabur Amla Hair Oil 275ml</span> 
+							<span>₹134</span> 
+							<div class="content" id="13"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(134,13)">
+								<p class="price">₹0</p>
+								<button onclick="submit(13)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(14)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dabur Amla Hair Oil 45ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dabur Amla Hair Oil 45ml</span> 
+							<span>₹20</span> 
+							<div class="content" id="14"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(20,14)">
+								<p class="price">₹0</p>
+								<button onclick="submit(14)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(15)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dabur Amla Hair Oil 90ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dabur Amla Hair Oil 90ml</span> 
+							<span>₹44</span> 
+							<div class="content" id="15"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(44,15)">
+								<p class="price">₹0</p>
+								<button onclick="submit(15)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(16)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dabur Vatika Coconut Oil.png" alt="Internet Slow Eth">
+							<span class="pname">Dabur Vatika Coconut Oil</span> 
+							<span>₹84</span> 
+							<div class="content" id="16"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(84,16)">
+								<p class="price">₹0</p>
+								<button onclick="submit(16)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(17)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dabur Vatika Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Dabur Vatika Sachet</span> 
+							<span>₹1</span> 
+							<div class="content" id="17"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(1,17)">
+								<p class="price">₹0</p>
+								<button onclick="submit(17)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(18)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dove Daily Shine 180ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dove Daily Shine 180ml</span> 
+							<span>₹110</span> 
+							<div class="content" id="18"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,18)">
+								<p class="price">₹0</p>
+								<button onclick="submit(18)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(19)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dove Dryness Care 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dove Dryness Care 80ml</span> 
+							<span>₹55</span> 
+							<div class="content" id="19"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(55,19)">
+								<p class="price">₹0</p>
+								<button onclick="submit(19)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(20)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dove Hairfall Rescue 180ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dove Hairfall Rescue 180ml</span> 
+							<span>₹110</span> 
+							<div class="content" id="20"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,20)">
+								<p class="price">₹0</p>
+								<button onclick="submit(20)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(21)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dove Hairfall Rescue 340ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dove Hairfall Rescue 340ml</span> 
+							<span>₹230</span> 
+							<div class="content" id="21"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(230,21)">
+								<p class="price">₹0</p>
+								<button onclick="submit(21)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(22)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dove Hairfall Rescue 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dove Hairfall Rescue 80ml</span> 
+							<span>₹55</span> 
+							<div class="content" id="22"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(55,22)">
+								<p class="price">₹0</p>
+								<button onclick="submit(22)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(23)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dove Intense Repair 180ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dove Intense Repair 180ml</span> 
+							<span>₹110</span> 
+							<div class="content" id="23"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,23)">
+								<p class="price">₹0</p>
+								<button onclick="submit(23)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(24)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dove Intense Repair 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Dove Intense Repair 80ml</span> 
+							<span>₹55</span> 
+							<div class="content" id="24"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(55,24)">
+								<p class="price">₹0</p>
+								<button onclick="submit(24)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(25)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dove Shampoo Conditioner Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Dove Shampoo Conditioner Sachet</span> 
+							<span>₹5</span> 
+							<div class="content" id="25"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(5,25)">
+								<p class="price">₹0</p>
+								<button onclick="submit(25)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(26)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Dove Shampoo Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Dove Shampoo Sachet</span> 
+							<span>₹2</span> 
+							<div class="content" id="26"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(2,26)">
+								<p class="price">₹0</p>
+								<button onclick="submit(26)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(27)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Head and Shoulders Cool Menthol 72ml.png" alt="Internet Slow Eth">
+							<span class="pname">Head and Shoulders Cool Menthol 72ml</span> 
+							<span>₹68</span> 
+							<div class="content" id="27"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(68,27)">
+								<p class="price">₹0</p>
+								<button onclick="submit(27)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(28)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Head And Shoulders Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Head And Shoulders Sachet</span> 
+							<span>₹2</span> 
+							<div class="content" id="28"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(2,28)">
+								<p class="price">₹0</p>
+								<button onclick="submit(28)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(29)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Kartika Shampoo 175ml.png" alt="Internet Slow Eth">
+							<span class="pname">Kartika Shampoo 175ml</span> 
+							<span>₹89</span> 
+							<div class="content" id="29"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(89,29)">
+								<p class="price">₹0</p>
+								<button onclick="submit(29)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(30)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Kartika Shampoo Sachet Green.png" alt="Internet Slow Eth">
+							<span class="pname">Kartika Shampoo Sachet Green</span> 
+							<span>₹1</span> 
+							<div class="content" id="30"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(1,30)">
+								<p class="price">₹0</p>
+								<button onclick="submit(30)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(31)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Kartika Shampoo Sachet Red.png" alt="Internet Slow Eth">
+							<span class="pname">Kartika Shampoo Sachet Red</span> 
+							<span>₹1</span> 
+							<div class="content" id="31"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(1,31)">
+								<p class="price">₹0</p>
+								<button onclick="submit(31)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(32)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Kesh Kanti Aloe Vera 200ml.png" alt="Internet Slow Eth">
+							<span class="pname">Kesh Kanti Aloe Vera 200ml</span> 
+							<span>₹85</span> 
+							<div class="content" id="32"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(85,32)">
+								<p class="price">₹0</p>
+								<button onclick="submit(32)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(33)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Kesh Kanti Anti Dandruff 200ml.png" alt="Internet Slow Eth">
+							<span class="pname">Kesh Kanti Anti Dandruff 200ml</span> 
+							<span>₹110</span> 
+							<div class="content" id="33"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,33)">
+								<p class="price">₹0</p>
+								<button onclick="submit(33)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(34)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Kesh Kanti Milk Protein 200ml.png" alt="Internet Slow Eth">
+							<span class="pname">Kesh Kanti Milk Protein 200ml</span> 
+							<span>₹95</span> 
+							<div class="content" id="34"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(95,34)">
+								<p class="price">₹0</p>
+								<button onclick="submit(34)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(35)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Kesh Kanti Natural 200ml.png" alt="Internet Slow Eth">
+							<span class="pname">Kesh Kanti Natural 200ml</span> 
+							<span>₹75</span> 
+							<div class="content" id="35"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(75,35)">
+								<p class="price">₹0</p>
+								<button onclick="submit(35)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(36)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Kesh Kanti Reetha 200ml.png" alt="Internet Slow Eth">
+							<span class="pname">Kesh Kanti Reetha 200ml</span> 
+							<span>₹85</span> 
+							<div class="content" id="36"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(85,36)">
+								<p class="price">₹0</p>
+								<button onclick="submit(36)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(37)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Kesh Kanti Silk and Shine 200ml.png" alt="Internet Slow Eth">
+							<span class="pname">Kesh Kanti Silk and Shine 200ml</span> 
+							<span>₹80</span> 
+							<div class="content" id="37"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(80,37)">
+								<p class="price">₹0</p>
+								<button onclick="submit(37)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(38)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Meera Shampoo Anti Dandruff 180ml.png" alt="Internet Slow Eth">
+							<span class="pname">Meera Shampoo Anti Dandruff 180ml</span> 
+							<span>₹150</span> 
+							<div class="content" id="38"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(150,38)">
+								<p class="price">₹0</p>
+								<button onclick="submit(38)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(39)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Meera Shampoo Anti Dandruff 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Meera Shampoo Anti Dandruff 80ml</span> 
+							<span>₹68</span> 
+							<div class="content" id="39"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(68,39)">
+								<p class="price">₹0</p>
+								<button onclick="submit(39)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(40)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Meera Shampoo Hair Fall 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Meera Shampoo Hair Fall 80ml</span> 
+							<span>₹62</span> 
+							<div class="content" id="40"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(62,40)">
+								<p class="price">₹0</p>
+								<button onclick="submit(40)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(41)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Navaratna Cool 15ml.png" alt="Internet Slow Eth">
+							<span class="pname">Navaratna Cool 15ml</span> 
+							<span>₹10</span> 
+							<div class="content" id="41"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,41)">
+								<p class="price">₹0</p>
+								<button onclick="submit(41)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(42)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Nyle Shampoo 90ml.png" alt="Internet Slow Eth">
+							<span class="pname">Nyle Shampoo 90ml</span> 
+							<span>₹50</span> 
+							<div class="content" id="42"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(50,42)">
+								<p class="price">₹0</p>
+								<button onclick="submit(42)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(43)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Pantene Advanced Hairfall Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Pantene Advanced Hairfall Sachet</span> 
+							<span>₹4</span> 
+							<div class="content" id="43"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(4,43)">
+								<p class="price">₹0</p>
+								<button onclick="submit(43)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(44)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Pantene Hairfall Control 75ml.png" alt="Internet Slow Eth">
+							<span class="pname">Pantene Hairfall Control 75ml</span> 
+							<span>₹60</span> 
+							<div class="content" id="44"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(60,44)">
+								<p class="price">₹0</p>
+								<button onclick="submit(44)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(45)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Parachute 100ml.png" alt="Internet Slow Eth">
+							<span class="pname">Parachute 100ml</span> 
+							<span>₹39</span> 
+							<div class="content" id="45"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(39,45)">
+								<p class="price">₹0</p>
+								<button onclick="submit(45)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(46)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Parachute 175ml.png" alt="Internet Slow Eth">
+							<span class="pname">Parachute 175ml</span> 
+							<span>₹69</span> 
+							<div class="content" id="46"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(69,46)">
+								<p class="price">₹0</p>
+								<button onclick="submit(46)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(47)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Parachute 250ml.png" alt="Internet Slow Eth">
+							<span class="pname">Parachute 250ml</span> 
+							<span>₹100</span> 
+							<div class="content" id="47"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(100,47)">
+								<p class="price">₹0</p>
+								<button onclick="submit(47)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(48)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Parachute 500ml.png" alt="Internet Slow Eth">
+							<span class="pname">Parachute 500ml</span> 
+							<span>₹199</span> 
+							<div class="content" id="48"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(199,48)">
+								<p class="price">₹0</p>
+								<button onclick="submit(48)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(49)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Parachute 50ml.png" alt="Internet Slow Eth">
+							<span class="pname">Parachute 50ml</span> 
+							<span>₹20</span> 
+							<div class="content" id="49"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(20,49)">
+								<p class="price">₹0</p>
+								<button onclick="submit(49)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(50)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Parachute Ayurvedic 190ml.png" alt="Internet Slow Eth">
+							<span class="pname">Parachute Ayurvedic 190ml</span> 
+							<span>₹115</span> 
+							<div class="content" id="50"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(115,50)">
+								<p class="price">₹0</p>
+								<button onclick="submit(50)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(51)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Parachute Ayurvedic Hair Oil 45ml.png" alt="Internet Slow Eth">
+							<span class="pname">Parachute Ayurvedic Hair Oil 45ml</span> 
+							<span>₹40</span> 
+							<div class="content" id="51"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(40,51)">
+								<p class="price">₹0</p>
+								<button onclick="submit(51)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(52)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Parachute Jasmine 500ml.png" alt="Internet Slow Eth">
+							<span class="pname">Parachute Jasmine 500ml</span> 
+							<span>₹220</span> 
+							<div class="content" id="52"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(220,52)">
+								<p class="price">₹0</p>
+								<button onclick="submit(52)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(53)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Parachute Jasmine 90ml.png" alt="Internet Slow Eth">
+							<span class="pname">Parachute Jasmine 90ml</span> 
+							<span>₹38</span> 
+							<div class="content" id="53"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(38,53)">
+								<p class="price">₹0</p>
+								<button onclick="submit(53)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(54)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Patanjali Almond Hair Oil.png" alt="Internet Slow Eth">
+							<span class="pname">Patanjali Almond Hair Oil</span> 
+							<span>₹30</span> 
+							<div class="content" id="54"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(30,54)">
+								<p class="price">₹0</p>
+								<button onclick="submit(54)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(55)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Patanjali Anti Dandruff Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Patanjali Anti Dandruff Sachet</span> 
+							<span>₹3</span> 
+							<div class="content" id="55"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(3,55)">
+								<p class="price">₹0</p>
+								<button onclick="submit(55)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(56)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Patanjali Milk protein Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Patanjali Milk protein Sachet</span> 
+							<span>₹3</span> 
+							<div class="content" id="56"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(3,56)">
+								<p class="price">₹0</p>
+								<button onclick="submit(56)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(57)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Patanjali Nariyal Oil.png" alt="Internet Slow Eth">
+							<span class="pname">Patanjali Nariyal Oil</span> 
+							<span>₹75</span> 
+							<div class="content" id="57"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(75,57)">
+								<p class="price">₹0</p>
+								<button onclick="submit(57)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(58)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Patanjali Sheetal Oil.png" alt="Internet Slow Eth">
+							<span class="pname">Patanjali Sheetal Oil</span> 
+							<span>₹55</span> 
+							<div class="content" id="58"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(55,58)">
+								<p class="price">₹0</p>
+								<button onclick="submit(58)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(59)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Sunsilk Black 180ml.png" alt="Internet Slow Eth">
+							<span class="pname">Sunsilk Black 180ml</span> 
+							<span>₹85</span> 
+							<div class="content" id="59"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(85,59)">
+								<p class="price">₹0</p>
+								<button onclick="submit(59)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(60)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Sunsilk Black 340ml.png" alt="Internet Slow Eth">
+							<span class="pname">Sunsilk Black 340ml</span> 
+							<span>₹180</span> 
+							<div class="content" id="60"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(180,60)">
+								<p class="price">₹0</p>
+								<button onclick="submit(60)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(61)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Sunsilk Black 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Sunsilk Black 80ml</span> 
+							<span>₹45</span> 
+							<div class="content" id="61"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(45,61)">
+								<p class="price">₹0</p>
+								<button onclick="submit(61)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(62)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Sunsilk Black Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Sunsilk Black Sachet</span> 
+							<span>₹1</span> 
+							<div class="content" id="62"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(1,62)">
+								<p class="price">₹0</p>
+								<button onclick="submit(62)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(63)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Sunsilk Green 180ml.png" alt="Internet Slow Eth">
+							<span class="pname">Sunsilk Green 180ml</span> 
+							<span>₹95</span> 
+							<div class="content" id="63"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(95,63)">
+								<p class="price">₹0</p>
+								<button onclick="submit(63)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(64)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Sunsilk Green 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Sunsilk Green 80ml</span> 
+							<span>₹45</span> 
+							<div class="content" id="64"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(45,64)">
+								<p class="price">₹0</p>
+								<button onclick="submit(64)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(65)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Tresemme Shampoo Sachet.png" alt="Internet Slow Eth">
+							<span class="pname">Tresemme Shampoo Sachet</span> 
+							<span>₹3</span> 
+							<div class="content" id="65"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(3,65)">
+								<p class="price">₹0</p>
+								<button onclick="submit(65)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(66)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Vatika Henna and Amla 180ml.png" alt="Internet Slow Eth">
+							<span class="pname">Vatika Henna and Amla 180ml</span> 
+							<span>₹75</span> 
+							<div class="content" id="66"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(75,66)">
+								<p class="price">₹0</p>
+								<button onclick="submit(66)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(67)">
+							<img src="../images/productimgs/Hair-Oil-and-Shampoo/Vatika Henna and Amla 80ml.png" alt="Internet Slow Eth">
+							<span class="pname">Vatika Henna and Amla 80ml</span> 
+							<span>₹30</span> 
+							<div class="content" id="67"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(30,67)">
+								<p class="price">₹0</p>
+								<button onclick="submit(67)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+       </div>
+  </body>
+</html>

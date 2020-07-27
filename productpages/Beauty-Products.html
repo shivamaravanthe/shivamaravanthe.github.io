@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow: 400' rel='stylesheet' type='text/css'>
+       <link rel="stylesheet" href="style.css">
+       <script type="text/javascript" src="java.js"></script>
+       <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+   </head>
+
+   <body>
+
+       <header>
+           <p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
+           <a href="../cheela/cheela.html">
+           <img src="../cheela/cheela.png" alt="ಚೀಲ" id="bag" ></a>
+           <span id="NoItemsAdded">0</span>
+       </header>
+
+       <div id="home">
+
+					<div class="row">
+						<div class="card" onclick="displaycontent(1)">
+							<img src="../images/productimgs/Beauty-Products/Cinthol Shaving Cream 20g.png" alt="Internet Slow Eth">
+							<span class="pname">Cinthol Shaving Cream 20g</span> 
+							<span>₹25</span> 
+							<div class="content" id="1"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(25,1)">
+								<p class="price">₹0</p>
+								<button onclick="submit(1)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(2)">
+							<img src="../images/productimgs/Beauty-Products/Cinthol Shaving Cream 78g.png" alt="Internet Slow Eth">
+							<span class="pname">Cinthol Shaving Cream 78g</span> 
+							<span>₹65</span> 
+							<div class="content" id="2"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(65,2)">
+								<p class="price">₹0</p>
+								<button onclick="submit(2)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(3)">
+							<img src="../images/productimgs/Beauty-Products/Cinthol Shaving Cream Menthol 78g.png" alt="Internet Slow Eth">
+							<span class="pname">Cinthol Shaving Cream Menthol 78g</span> 
+							<span>₹65</span> 
+							<div class="content" id="3"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(65,3)">
+								<p class="price">₹0</p>
+								<button onclick="submit(3)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(4)">
+							<img src="../images/productimgs/Beauty-Products/CleanandClear Apple.png" alt="Internet Slow Eth">
+							<span class="pname">CleanandClear Apple</span> 
+							<span>₹135</span> 
+							<div class="content" id="4"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(135,4)">
+								<p class="price">₹0</p>
+								<button onclick="submit(4)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(5)">
+							<img src="../images/productimgs/Beauty-Products/CleanandClear Aqua Splash.png" alt="Internet Slow Eth">
+							<span class="pname">CleanandClear Aqua Splash</span> 
+							<span>₹75</span> 
+							<div class="content" id="5"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(75,5)">
+								<p class="price">₹0</p>
+								<button onclick="submit(5)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(6)">
+							<img src="../images/productimgs/Beauty-Products/CleanandClear Foaming Facewash.png" alt="Internet Slow Eth">
+							<span class="pname">CleanandClear Foaming Facewash</span> 
+							<span>₹120</span> 
+							<div class="content" id="6"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(120,6)">
+								<p class="price">₹0</p>
+								<button onclick="submit(6)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(7)">
+							<img src="../images/productimgs/Beauty-Products/CleanandClear Lemon 100ml.png" alt="Internet Slow Eth">
+							<span class="pname">CleanandClear Lemon 100ml</span> 
+							<span>₹135</span> 
+							<div class="content" id="7"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(135,7)">
+								<p class="price">₹0</p>
+								<button onclick="submit(7)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(8)">
+							<img src="../images/productimgs/Beauty-Products/CleanandClear Pimple Facewash.png" alt="Internet Slow Eth">
+							<span class="pname">CleanandClear Pimple Facewash</span> 
+							<span>₹105</span> 
+							<div class="content" id="8"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(105,8)">
+								<p class="price">₹0</p>
+								<button onclick="submit(8)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(9)">
+							<img src="../images/productimgs/Beauty-Products/Dettol Cool Shaving Cream.png" alt="Internet Slow Eth">
+							<span class="pname">Dettol Cool Shaving Cream</span> 
+							<span>₹75</span> 
+							<div class="content" id="9"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(75,9)">
+								<p class="price">₹0</p>
+								<button onclick="submit(9)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(10)">
+							<img src="../images/productimgs/Beauty-Products/Dettol Fresh Shaving Cream.png" alt="Internet Slow Eth">
+							<span class="pname">Dettol Fresh Shaving Cream</span> 
+							<span>₹75</span> 
+							<div class="content" id="10"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(75,10)">
+								<p class="price">₹0</p>
+								<button onclick="submit(10)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(11)">
+							<img src="../images/productimgs/Beauty-Products/Emami Fair And Handsome.png" alt="Internet Slow Eth">
+							<span class="pname">Emami Fair And Handsome</span> 
+							<span>₹10</span> 
+							<div class="content" id="11"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,11)">
+								<p class="price">₹0</p>
+								<button onclick="submit(11)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(12)">
+							<img src="../images/productimgs/Beauty-Products/Emami Fair And Handsome 15g.png" alt="Internet Slow Eth">
+							<span class="pname">Emami Fair And Handsome 15g</span> 
+							<span>₹25</span> 
+							<div class="content" id="12"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(25,12)">
+								<p class="price">₹0</p>
+								<button onclick="submit(12)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(13)">
+							<img src="../images/productimgs/Beauty-Products/Emami Fair And Handsome 30g.png" alt="Internet Slow Eth">
+							<span class="pname">Emami Fair And Handsome 30g</span> 
+							<span>₹60</span> 
+							<div class="content" id="13"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(60,13)">
+								<p class="price">₹0</p>
+								<button onclick="submit(13)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(14)">
+							<img src="../images/productimgs/Beauty-Products/Fair and Lovely Facewash 20g.png" alt="Internet Slow Eth">
+							<span class="pname">Fair and Lovely Facewash 20g</span> 
+							<span>₹25</span> 
+							<div class="content" id="14"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(25,14)">
+								<p class="price">₹0</p>
+								<button onclick="submit(14)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(15)">
+							<img src="../images/productimgs/Beauty-Products/Fair and Lovely Facewash 50g.png" alt="Internet Slow Eth">
+							<span class="pname">Fair and Lovely Facewash 50g</span> 
+							<span>₹65</span> 
+							<div class="content" id="15"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(65,15)">
+								<p class="price">₹0</p>
+								<button onclick="submit(15)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(16)">
+							<img src="../images/productimgs/Beauty-Products/Fair and Lovely Multi Vit 25g.png" alt="Internet Slow Eth">
+							<span class="pname">Fair and Lovely Multi Vit 25g</span> 
+							<span>₹54</span> 
+							<div class="content" id="16"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(54,16)">
+								<p class="price">₹0</p>
+								<button onclick="submit(16)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(17)">
+							<img src="../images/productimgs/Beauty-Products/Fair and Lovely Multi Vit 50g.png" alt="Internet Slow Eth">
+							<span class="pname">Fair and Lovely Multi Vit 50g</span> 
+							<span>₹102</span> 
+							<div class="content" id="17"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(102,17)">
+								<p class="price">₹0</p>
+								<button onclick="submit(17)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(18)">
+							<img src="../images/productimgs/Beauty-Products/Fair and Lovely Sachet 15g.png" alt="Internet Slow Eth">
+							<span class="pname">Fair and Lovely Sachet 15g</span> 
+							<span>₹20</span> 
+							<div class="content" id="18"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(20,18)">
+								<p class="price">₹0</p>
+								<button onclick="submit(18)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(19)">
+							<img src="../images/productimgs/Beauty-Products/Gallant II Cartridge.png" alt="Internet Slow Eth">
+							<span class="pname">Gallant II Cartridge</span> 
+							<span>₹45</span> 
+							<div class="content" id="19"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(45,19)">
+								<p class="price">₹0</p>
+								<button onclick="submit(19)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(20)">
+							<img src="../images/productimgs/Beauty-Products/Gallant Shaving Blade.png" alt="Internet Slow Eth">
+							<span class="pname">Gallant Shaving Blade</span> 
+							<span>₹50</span> 
+							<div class="content" id="20"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(50,20)">
+								<p class="price">₹0</p>
+								<button onclick="submit(20)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(21)">
+							<img src="../images/productimgs/Beauty-Products/Garnier Black Natural.png" alt="Internet Slow Eth">
+							<span class="pname">Garnier Black Natural</span> 
+							<span>₹37</span> 
+							<div class="content" id="21"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(37,21)">
+								<p class="price">₹0</p>
+								<button onclick="submit(21)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(22)">
+							<img src="../images/productimgs/Beauty-Products/Garnier Colour Naturals.png" alt="Internet Slow Eth">
+							<span class="pname">Garnier Colour Naturals</span> 
+							<span>₹80</span> 
+							<div class="content" id="22"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(80,22)">
+								<p class="price">₹0</p>
+								<button onclick="submit(22)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(23)">
+							<img src="../images/productimgs/Beauty-Products/Garnier Men Power White.png" alt="Internet Slow Eth">
+							<span class="pname">Garnier Men Power White</span> 
+							<span>₹90</span> 
+							<div class="content" id="23"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(90,23)">
+								<p class="price">₹0</p>
+								<button onclick="submit(23)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(24)">
+							<img src="../images/productimgs/Beauty-Products/Garnier Serum Mask.png" alt="Internet Slow Eth">
+							<span class="pname">Garnier Serum Mask</span> 
+							<span>₹99</span> 
+							<div class="content" id="24"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(99,24)">
+								<p class="price">₹0</p>
+								<button onclick="submit(24)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(25)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Gaurd.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Gaurd</span> 
+							<span>₹10</span> 
+							<div class="content" id="25"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,25)">
+								<p class="price">₹0</p>
+								<button onclick="submit(25)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(26)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Gaurd Blade.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Gaurd Blade</span> 
+							<span>₹22</span> 
+							<div class="content" id="26"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(22,26)">
+								<p class="price">₹0</p>
+								<button onclick="submit(26)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(27)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Guard Cartridge.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Guard Cartridge</span> 
+							<span>₹50</span> 
+							<div class="content" id="27"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(50,27)">
+								<p class="price">₹0</p>
+								<button onclick="submit(27)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(28)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Lime Shaving Cream 93g.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Lime Shaving Cream 93g</span> 
+							<span>₹69</span> 
+							<div class="content" id="28"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(69,28)">
+								<p class="price">₹0</p>
+								<button onclick="submit(28)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(29)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Mach 3.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Mach 3</span> 
+							<span>₹180</span> 
+							<div class="content" id="29"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(180,29)">
+								<p class="price">₹0</p>
+								<button onclick="submit(29)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(30)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Mach 3 Cartridge.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Mach 3 Cartridge</span> 
+							<span>₹260</span> 
+							<div class="content" id="30"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(260,30)">
+								<p class="price">₹0</p>
+								<button onclick="submit(30)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(31)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Shave Brush.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Shave Brush</span> 
+							<span>₹54</span> 
+							<div class="content" id="31"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(54,31)">
+								<p class="price">₹0</p>
+								<button onclick="submit(31)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(32)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Shaving Gel 60g.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Shaving Gel 60g</span> 
+							<span>₹85</span> 
+							<div class="content" id="32"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(85,32)">
+								<p class="price">₹0</p>
+								<button onclick="submit(32)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(33)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Vector.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Vector</span> 
+							<span>₹60</span> 
+							<div class="content" id="33"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(60,33)">
+								<p class="price">₹0</p>
+								<button onclick="submit(33)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(34)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Vector 3 Cartridge.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Vector 3 Cartridge</span> 
+							<span>₹130</span> 
+							<div class="content" id="34"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(130,34)">
+								<p class="price">₹0</p>
+								<button onclick="submit(34)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(35)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Vector Cartridge.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Vector Cartridge</span> 
+							<span>₹60</span> 
+							<div class="content" id="35"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(60,35)">
+								<p class="price">₹0</p>
+								<button onclick="submit(35)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(36)">
+							<img src="../images/productimgs/Beauty-Products/Gilette Wilkinson 11No.png" alt="Internet Slow Eth">
+							<span class="pname">Gilette Wilkinson 11No</span> 
+							<span>₹25</span> 
+							<div class="content" id="36"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(25,36)">
+								<p class="price">₹0</p>
+								<button onclick="submit(36)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(37)">
+							<img src="../images/productimgs/Beauty-Products/Gillette 7 O'clock Blade.png" alt="Internet Slow Eth">
+							<span class="pname">Gillette 7 O'clock Blade</span> 
+							<span>₹24</span> 
+							<div class="content" id="37"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(24,37)">
+								<p class="price">₹0</p>
+								<button onclick="submit(37)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(38)">
+							<img src="../images/productimgs/Beauty-Products/Gillette Vector  Blade.png" alt="Internet Slow Eth">
+							<span class="pname">Gillette Vector  Blade</span> 
+							<span>₹110</span> 
+							<div class="content" id="38"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,38)">
+								<p class="price">₹0</p>
+								<button onclick="submit(38)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(39)">
+							<img src="../images/productimgs/Beauty-Products/Godrej Expert Easy.png" alt="Internet Slow Eth">
+							<span class="pname">Godrej Expert Easy</span> 
+							<span>₹25</span> 
+							<div class="content" id="39"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(25,39)">
+								<p class="price">₹0</p>
+								<button onclick="submit(39)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(40)">
+							<img src="../images/productimgs/Beauty-Products/Godrej Expert Original.png" alt="Internet Slow Eth">
+							<span class="pname">Godrej Expert Original</span> 
+							<span>₹456</span> 
+							<div class="content" id="40"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(456,40)">
+								<p class="price">₹0</p>
+								<button onclick="submit(40)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(41)">
+							<img src="../images/productimgs/Beauty-Products/Godrej Expert Rich Creme.png" alt="Internet Slow Eth">
+							<span class="pname">Godrej Expert Rich Creme</span> 
+							<span>₹30</span> 
+							<div class="content" id="41"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(30,41)">
+								<p class="price">₹0</p>
+								<button onclick="submit(41)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(42)">
+							<img src="../images/productimgs/Beauty-Products/Godrej Shaving Round.png" alt="Internet Slow Eth">
+							<span class="pname">Godrej Shaving Round</span> 
+							<span>₹20</span> 
+							<div class="content" id="42"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(20,42)">
+								<p class="price">₹0</p>
+								<button onclick="submit(42)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(43)">
+							<img src="../images/productimgs/Beauty-Products/Hair Dye Brush.png" alt="Internet Slow Eth">
+							<span class="pname">Hair Dye Brush</span> 
+							<span>₹10</span> 
+							<div class="content" id="43"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,43)">
+								<p class="price">₹0</p>
+								<button onclick="submit(43)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(44)">
+							<img src="../images/productimgs/Beauty-Products/Indica 10 Mins.png" alt="Internet Slow Eth">
+							<span class="pname">Indica 10 Mins</span> 
+							<span>₹19</span> 
+							<div class="content" id="44"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(19,44)">
+								<p class="price">₹0</p>
+								<button onclick="submit(44)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(45)">
+							<img src="../images/productimgs/Beauty-Products/Indica Easy.png" alt="Internet Slow Eth">
+							<span class="pname">Indica Easy</span> 
+							<span>₹25</span> 
+							<div class="content" id="45"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(25,45)">
+								<p class="price">₹0</p>
+								<button onclick="submit(45)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(46)">
+							<img src="../images/productimgs/Beauty-Products/Johnson's Buds 30N.png" alt="Internet Slow Eth">
+							<span class="pname">Johnson's Buds 30N</span> 
+							<span>₹45</span> 
+							<div class="content" id="46"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(45,46)">
+								<p class="price">₹0</p>
+								<button onclick="submit(46)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(47)">
+							<img src="../images/productimgs/Beauty-Products/Kiwi Ear Buds.png" alt="Internet Slow Eth">
+							<span class="pname">Kiwi Ear Buds</span> 
+							<span>₹20</span> 
+							<div class="content" id="47"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(20,47)">
+								<p class="price">₹0</p>
+								<button onclick="submit(47)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(48)">
+							<img src="../images/productimgs/Beauty-Products/Laser Ultra Shave Brush.png" alt="Internet Slow Eth">
+							<span class="pname">Laser Ultra Shave Brush</span> 
+							<span>₹50</span> 
+							<div class="content" id="48"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(50,48)">
+								<p class="price">₹0</p>
+								<button onclick="submit(48)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(49)">
+							<img src="../images/productimgs/Beauty-Products/Men's Fair and Lovely 20g.png" alt="Internet Slow Eth">
+							<span class="pname">Men's Fair and Lovely 20g</span> 
+							<span>₹35</span> 
+							<div class="content" id="49"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(35,49)">
+								<p class="price">₹0</p>
+								<button onclick="submit(49)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(50)">
+							<img src="../images/productimgs/Beauty-Products/Men's Fair and Lovely Instant 50g.png" alt="Internet Slow Eth">
+							<span class="pname">Men's Fair and Lovely Instant 50g</span> 
+							<span>₹85</span> 
+							<div class="content" id="50"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(85,50)">
+								<p class="price">₹0</p>
+								<button onclick="submit(50)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(51)">
+							<img src="../images/productimgs/Beauty-Products/Men's Fair and Lovely Rapid 50g.png" alt="Internet Slow Eth">
+							<span class="pname">Men's Fair and Lovely Rapid 50g</span> 
+							<span>₹130</span> 
+							<div class="content" id="51"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(130,51)">
+								<p class="price">₹0</p>
+								<button onclick="submit(51)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(52)">
+							<img src="../images/productimgs/Beauty-Products/Nobel Safety Razor.png" alt="Internet Slow Eth">
+							<span class="pname">Nobel Safety Razor</span> 
+							<span>₹40</span> 
+							<div class="content" id="52"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(40,52)">
+								<p class="price">₹0</p>
+								<button onclick="submit(52)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(53)">
+							<img src="../images/productimgs/Beauty-Products/Old Spice After Shave.png" alt="Internet Slow Eth">
+							<span class="pname">Old Spice After Shave</span> 
+							<span>₹120</span> 
+							<div class="content" id="53"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(120,53)">
+								<p class="price">₹0</p>
+								<button onclick="submit(53)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(54)">
+							<img src="../images/productimgs/Beauty-Products/Old Spice Shaving Cream.png" alt="Internet Slow Eth">
+							<span class="pname">Old Spice Shaving Cream</span> 
+							<span>₹30</span> 
+							<div class="content" id="54"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(30,54)">
+								<p class="price">₹0</p>
+								<button onclick="submit(54)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(55)">
+							<img src="../images/productimgs/Beauty-Products/Pond's Cold Cream  26g.png" alt="Internet Slow Eth">
+							<span class="pname">Pond's Cold Cream  26g</span> 
+							<span>₹44</span> 
+							<div class="content" id="55"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(44,55)">
+								<p class="price">₹0</p>
+								<button onclick="submit(55)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(56)">
+							<img src="../images/productimgs/Beauty-Products/Pond's White Beauty 50g.png" alt="Internet Slow Eth">
+							<span class="pname">Pond's White Beauty 50g</span> 
+							<span>₹79</span> 
+							<div class="content" id="56"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(79,56)">
+								<p class="price">₹0</p>
+								<button onclick="submit(56)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(57)">
+							<img src="../images/productimgs/Beauty-Products/Pond's White Beauty Cream 23g.png" alt="Internet Slow Eth">
+							<span class="pname">Pond's White Beauty Cream 23g</span> 
+							<span>₹70</span> 
+							<div class="content" id="57"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(70,57)">
+								<p class="price">₹0</p>
+								<button onclick="submit(57)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(58)">
+							<img src="../images/productimgs/Beauty-Products/Supermax S11.png" alt="Internet Slow Eth">
+							<span class="pname">Supermax S11</span> 
+							<span>₹60</span> 
+							<div class="content" id="58"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(60,58)">
+								<p class="price">₹0</p>
+								<button onclick="submit(58)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(59)">
+							<img src="../images/productimgs/Beauty-Products/Supermax S11 Blade.png" alt="Internet Slow Eth">
+							<span class="pname">Supermax S11 Blade</span> 
+							<span>₹50</span> 
+							<div class="content" id="59"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(50,59)">
+								<p class="price">₹0</p>
+								<button onclick="submit(59)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(60)">
+							<img src="../images/productimgs/Beauty-Products/Topaz Twin.png" alt="Internet Slow Eth">
+							<span class="pname">Topaz Twin</span> 
+							<span>₹10</span> 
+							<div class="content" id="60"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,60)">
+								<p class="price">₹0</p>
+								<button onclick="submit(60)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(61)">
+							<img src="../images/productimgs/Beauty-Products/Veet Hair Remover Dry Skin 25g.png" alt="Internet Slow Eth">
+							<span class="pname">Veet Hair Remover Dry Skin 25g</span> 
+							<span>₹63</span> 
+							<div class="content" id="61"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(63,61)">
+								<p class="price">₹0</p>
+								<button onclick="submit(61)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(62)">
+							<img src="../images/productimgs/Beauty-Products/Veet Hair Remover Normal Skin 25g.png" alt="Internet Slow Eth">
+							<span class="pname">Veet Hair Remover Normal Skin 25g</span> 
+							<span>₹63</span> 
+							<div class="content" id="62"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(63,62)">
+								<p class="price">₹0</p>
+								<button onclick="submit(62)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(63)">
+							<img src="../images/productimgs/Beauty-Products/Veet Hair Remover Sensitive Skin 25g.png" alt="Internet Slow Eth">
+							<span class="pname">Veet Hair Remover Sensitive Skin 25g</span> 
+							<span>₹63</span> 
+							<div class="content" id="63"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(63,63)">
+								<p class="price">₹0</p>
+								<button onclick="submit(63)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+       </div>
+  </body>
+</html>

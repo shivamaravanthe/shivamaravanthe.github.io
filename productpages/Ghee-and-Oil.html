@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow: 400' rel='stylesheet' type='text/css'>
+       <link rel="stylesheet" href="style.css">
+       <script type="text/javascript" src="java.js"></script>
+       <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+   </head>
+
+   <body>
+
+       <header>
+           <p id="sname">ಸೋಮನಾಥ ಸ್ಟೋರ್ಸ್</p>
+           <a href="../cheela/cheela.html">
+           <img src="../cheela/cheela.png" alt="ಚೀಲ" id="bag" ></a>
+           <span id="NoItemsAdded">0</span>
+       </header>
+
+       <div id="home">
+
+					<div class="row">
+						<div class="card" onclick="displaycontent(1)">
+							<img src="../images/productimgs/Ghee-and-Oil/Apis Honey.png" alt="Internet Slow Eth">
+							<span class="pname">Apis Honey</span> 
+							<span>₹20</span> 
+							<div class="content" id="1"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(20,1)">
+								<p class="price">₹0</p>
+								<button onclick="submit(1)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(2)">
+							<img src="../images/productimgs/Ghee-and-Oil/Coco Uttam 0.5L.png" alt="Internet Slow Eth">
+							<span class="pname">Coco Uttam 0.5L</span> 
+							<span>₹</span> 
+							<div class="content" id="2"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,2)">
+								<p class="price">₹0</p>
+								<button onclick="submit(2)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(3)">
+							<img src="../images/productimgs/Ghee-and-Oil/Coco Uttam 1L.png" alt="Internet Slow Eth">
+							<span class="pname">Coco Uttam 1L</span> 
+							<span>₹</span> 
+							<div class="content" id="3"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,3)">
+								<p class="price">₹0</p>
+								<button onclick="submit(3)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(4)">
+							<img src="../images/productimgs/Ghee-and-Oil/Coconut Oil 100ml.png" alt="Internet Slow Eth">
+							<span class="pname">Coconut Oil 100ml</span> 
+							<span>₹</span> 
+							<div class="content" id="4"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,4)">
+								<p class="price">₹0</p>
+								<button onclick="submit(4)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(5)">
+							<img src="../images/productimgs/Ghee-and-Oil/Deepam Lamp Oil.png" alt="Internet Slow Eth">
+							<span class="pname">Deepam Lamp Oil</span> 
+							<span>₹150</span> 
+							<div class="content" id="5"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(150,5)">
+								<p class="price">₹0</p>
+								<button onclick="submit(5)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(6)">
+							<img src="../images/productimgs/Ghee-and-Oil/Emami Mustard Oil.png" alt="Internet Slow Eth">
+							<span class="pname">Emami Mustard Oil</span> 
+							<span>₹120</span> 
+							<div class="content" id="6"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(120,6)">
+								<p class="price">₹0</p>
+								<button onclick="submit(6)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(7)">
+							<img src="../images/productimgs/Ghee-and-Oil/Emami Sunflower 1L.png" alt="Internet Slow Eth">
+							<span class="pname">Emami Sunflower 1L</span> 
+							<span>₹</span> 
+							<div class="content" id="7"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,7)">
+								<p class="price">₹0</p>
+								<button onclick="submit(7)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(8)">
+							<img src="../images/productimgs/Ghee-and-Oil/Freedom Sunflower Oil.png" alt="Internet Slow Eth">
+							<span class="pname">Freedom Sunflower Oil</span> 
+							<span>₹110</span> 
+							<div class="content" id="8"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,8)">
+								<p class="price">₹0</p>
+								<button onclick="submit(8)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(9)">
+							<img src="../images/productimgs/Ghee-and-Oil/Gingelly Oil 0.5L.png" alt="Internet Slow Eth">
+							<span class="pname">Gingelly Oil 0.5L</span> 
+							<span>₹</span> 
+							<div class="content" id="9"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,9)">
+								<p class="price">₹0</p>
+								<button onclick="submit(9)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(10)">
+							<img src="../images/productimgs/Ghee-and-Oil/Gingelly Oil 1L.png" alt="Internet Slow Eth">
+							<span class="pname">Gingelly Oil 1L</span> 
+							<span>₹</span> 
+							<div class="content" id="10"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,10)">
+								<p class="price">₹0</p>
+								<button onclick="submit(10)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(11)">
+							<img src="../images/productimgs/Ghee-and-Oil/Gingelly Oil 200ml.png" alt="Internet Slow Eth">
+							<span class="pname">Gingelly Oil 200ml</span> 
+							<span>₹</span> 
+							<div class="content" id="11"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,11)">
+								<p class="price">₹0</p>
+								<button onclick="submit(11)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(12)">
+							<img src="../images/productimgs/Ghee-and-Oil/Gingelly Oil 5L.png" alt="Internet Slow Eth">
+							<span class="pname">Gingelly Oil 5L</span> 
+							<span>₹490</span> 
+							<div class="content" id="12"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(490,12)">
+								<p class="price">₹0</p>
+								<button onclick="submit(12)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(13)">
+							<img src="../images/productimgs/Ghee-and-Oil/Gold Winner 0.5L.png" alt="Internet Slow Eth">
+							<span class="pname">Gold Winner 0.5L</span> 
+							<span>₹</span> 
+							<div class="content" id="13"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,13)">
+								<p class="price">₹0</p>
+								<button onclick="submit(13)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(14)">
+							<img src="../images/productimgs/Ghee-and-Oil/Gold Winner 1L.png" alt="Internet Slow Eth">
+							<span class="pname">Gold Winner 1L</span> 
+							<span>₹</span> 
+							<div class="content" id="14"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,14)">
+								<p class="price">₹0</p>
+								<button onclick="submit(14)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(15)">
+							<img src="../images/productimgs/Ghee-and-Oil/Gold Winner 1L Bot.png" alt="Internet Slow Eth">
+							<span class="pname">Gold Winner 1L Bot</span> 
+							<span>₹115</span> 
+							<div class="content" id="15"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(115,15)">
+								<p class="price">₹0</p>
+								<button onclick="submit(15)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(16)">
+							<img src="../images/productimgs/Ghee-and-Oil/Gold Winner 5L.png" alt="Internet Slow Eth">
+							<span class="pname">Gold Winner 5L</span> 
+							<span>₹550</span> 
+							<div class="content" id="16"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(550,16)">
+								<p class="price">₹0</p>
+								<button onclick="submit(16)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(17)">
+							<img src="../images/productimgs/Ghee-and-Oil/GRB Ghee 100ml Bot.png" alt="Internet Slow Eth">
+							<span class="pname">GRB Ghee 100ml Bot</span> 
+							<span>₹80</span> 
+							<div class="content" id="17"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(80,17)">
+								<p class="price">₹0</p>
+								<button onclick="submit(17)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(18)">
+							<img src="../images/productimgs/Ghee-and-Oil/GRB Ghee 1L Bot.png" alt="Internet Slow Eth">
+							<span class="pname">GRB Ghee 1L Bot</span> 
+							<span>₹632</span> 
+							<div class="content" id="18"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(632,18)">
+								<p class="price">₹0</p>
+								<button onclick="submit(18)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(19)">
+							<img src="../images/productimgs/Ghee-and-Oil/GRB Ghee 200ml Bot.png" alt="Internet Slow Eth">
+							<span class="pname">GRB Ghee 200ml Bot</span> 
+							<span>₹142</span> 
+							<div class="content" id="19"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(142,19)">
+								<p class="price">₹0</p>
+								<button onclick="submit(19)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(20)">
+							<img src="../images/productimgs/Ghee-and-Oil/GRB Ghee 500ml.png" alt="Internet Slow Eth">
+							<span class="pname">GRB Ghee 500ml</span> 
+							<span>₹297</span> 
+							<div class="content" id="20"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(297,20)">
+								<p class="price">₹0</p>
+								<button onclick="submit(20)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(21)">
+							<img src="../images/productimgs/Ghee-and-Oil/GRB Ghee Rs10.png" alt="Internet Slow Eth">
+							<span class="pname">GRB Ghee Rs10</span> 
+							<span>₹10</span> 
+							<div class="content" id="21"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,21)">
+								<p class="price">₹0</p>
+								<button onclick="submit(21)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(22)">
+							<img src="../images/productimgs/Ghee-and-Oil/GRB Ghee Rs20.png" alt="Internet Slow Eth">
+							<span class="pname">GRB Ghee Rs20</span> 
+							<span>₹20</span> 
+							<div class="content" id="22"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(20,22)">
+								<p class="price">₹0</p>
+								<button onclick="submit(22)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(23)">
+							<img src="../images/productimgs/Ghee-and-Oil/Hangyo Ghee 500ml.png" alt="Internet Slow Eth">
+							<span class="pname">Hangyo Ghee 500ml</span> 
+							<span>₹250</span> 
+							<div class="content" id="23"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(250,23)">
+								<p class="price">₹0</p>
+								<button onclick="submit(23)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(24)">
+							<img src="../images/productimgs/Ghee-and-Oil/Lion Honey  25g.png" alt="Internet Slow Eth">
+							<span class="pname">Lion Honey  25g</span> 
+							<span>₹15</span> 
+							<div class="content" id="24"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(15,24)">
+								<p class="price">₹0</p>
+								<button onclick="submit(24)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(25)">
+							<img src="../images/productimgs/Ghee-and-Oil/Lion Honey 100g.png" alt="Internet Slow Eth">
+							<span class="pname">Lion Honey 100g</span> 
+							<span>₹46</span> 
+							<div class="content" id="25"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(46,25)">
+								<p class="price">₹0</p>
+								<button onclick="submit(25)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(26)">
+							<img src="../images/productimgs/Ghee-and-Oil/Lion Honey 15g.png" alt="Internet Slow Eth">
+							<span class="pname">Lion Honey 15g</span> 
+							<span>₹10</span> 
+							<div class="content" id="26"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(10,26)">
+								<p class="price">₹0</p>
+								<button onclick="submit(26)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(27)">
+							<img src="../images/productimgs/Ghee-and-Oil/Lion Honey 2x250g.png" alt="Internet Slow Eth">
+							<span class="pname">Lion Honey 2x250g</span> 
+							<span>₹137</span> 
+							<div class="content" id="27"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(137,27)">
+								<p class="price">₹0</p>
+								<button onclick="submit(27)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(28)">
+							<img src="../images/productimgs/Ghee-and-Oil/Lion Honey 50g.png" alt="Internet Slow Eth">
+							<span class="pname">Lion Honey 50g</span> 
+							<span>₹28</span> 
+							<div class="content" id="28"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(28,28)">
+								<p class="price">₹0</p>
+								<button onclick="submit(28)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(29)">
+							<img src="../images/productimgs/Ghee-and-Oil/Nandini Ghee 100ml.png" alt="Internet Slow Eth">
+							<span class="pname">Nandini Ghee 100ml</span> 
+							<span>₹55</span> 
+							<div class="content" id="29"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(55,29)">
+								<p class="price">₹0</p>
+								<button onclick="submit(29)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(30)">
+							<img src="../images/productimgs/Ghee-and-Oil/Nandini Ghee 200ml.png" alt="Internet Slow Eth">
+							<span class="pname">Nandini Ghee 200ml</span> 
+							<span>₹110</span> 
+							<div class="content" id="30"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(110,30)">
+								<p class="price">₹0</p>
+								<button onclick="submit(30)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(31)">
+							<img src="../images/productimgs/Ghee-and-Oil/Nandini Ghee 500ml.png" alt="Internet Slow Eth">
+							<span class="pname">Nandini Ghee 500ml</span> 
+							<span>₹245</span> 
+							<div class="content" id="31"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(245,31)">
+								<p class="price">₹0</p>
+								<button onclick="submit(31)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(32)">
+							<img src="../images/productimgs/Ghee-and-Oil/Nandini Ghee 50ml.png" alt="Internet Slow Eth">
+							<span class="pname">Nandini Ghee 50ml</span> 
+							<span>₹35</span> 
+							<div class="content" id="32"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(35,32)">
+								<p class="price">₹0</p>
+								<button onclick="submit(32)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(33)">
+							<img src="../images/productimgs/Ghee-and-Oil/Palm Jyoti 0.5L.png" alt="Internet Slow Eth">
+							<span class="pname">Palm Jyoti 0.5L</span> 
+							<span>₹</span> 
+							<div class="content" id="33"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,33)">
+								<p class="price">₹0</p>
+								<button onclick="submit(33)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(34)">
+							<img src="../images/productimgs/Ghee-and-Oil/Palm Jyoti 1L.png" alt="Internet Slow Eth">
+							<span class="pname">Palm Jyoti 1L</span> 
+							<span>₹</span> 
+							<div class="content" id="34"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,34)">
+								<p class="price">₹0</p>
+								<button onclick="submit(34)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(35)">
+							<img src="../images/productimgs/Ghee-and-Oil/Patanjali Sunflower Oil.png" alt="Internet Slow Eth">
+							<span class="pname">Patanjali Sunflower Oil</span> 
+							<span>₹</span> 
+							<div class="content" id="35"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,35)">
+								<p class="price">₹0</p>
+								<button onclick="submit(35)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(36)">
+							<img src="../images/productimgs/Ghee-and-Oil/Ruchi Vanaspati 500ml.png" alt="Internet Slow Eth">
+							<span class="pname">Ruchi Vanaspati 500ml</span> 
+							<span>₹</span> 
+							<div class="content" id="36"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,36)">
+								<p class="price">₹0</p>
+								<button onclick="submit(36)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+			</div>
+					<div class="row">
+						<div class="card" onclick="displaycontent(37)">
+							<img src="../images/productimgs/Ghee-and-Oil/Shri Nidhi Coconut Oil.png" alt="Internet Slow Eth">
+							<span class="pname">Shri Nidhi Coconut Oil</span> 
+							<span>₹</span> 
+							<div class="content" id="37"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,37)">
+								<p class="price">₹0</p>
+								<button onclick="submit(37)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+						<div class="card" onclick="displaycontent(38)">
+							<img src="../images/productimgs/Ghee-and-Oil/Suntaaza 0.5L.png" alt="Internet Slow Eth">
+							<span class="pname">Suntaaza 0.5L</span> 
+							<span>₹</span> 
+							<div class="content" id="38"> 
+								<input type="number" name="quantity" step="0.5" min="0" maxlength="6" size="4" placeholder="ಎಷ್ಟು" oninput="calprice(,38)">
+								<p class="price">₹0</p>
+								<button onclick="submit(38)">ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ</button>
+							</div>
+						</div>
+
+
+       </div>
+  </body>
+</html>
