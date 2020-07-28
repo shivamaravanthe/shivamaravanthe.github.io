@@ -3,9 +3,30 @@
   <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="style/addtohomescreen.css">
+     <script type="text/javascript" src="src/addtohomescreen.js"></script>
+     <script>
+       if (
+         (("standalone" in window.navigator) && !window.navigator.standalone) ||
+          (!window.matchMedia('(display-mode): standalone)').matches )
+        )
+        {
+             addToHomescreen();
+          }
+          </script>
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="java.js"></script>
-     <title>ಸೋಮನಾಥ ಸ್ಟೋರ್</title>
+     <title>ಸೋಮನಾಥ ಸ್ಟೋರ್-ಮರವಂತೆ</title>
+     <meta name="mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-capable" content="yes"/>
+     <meta name="mobile-web-app-capable" content="yes"/>
+     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+     <meta name="apple-mobile-web-app-title" content="HosAngadi">
   </head>
    <body onload="intialize()">
    <header>
@@ -33,7 +54,7 @@
 <div class="row">
 <div class="card"><a href="productpages/Santizers-and-Hand-Wash.html">
 <img src="images/catimgs/Santizers-and-Hand-Wash.png" alt="Santizers-HandWash">
-<span class="pname">Santizers</span>       </a> </div>
+<span class="pname">Santizers-HandWash</span>       </a> </div>
 
 <div class="card"><a href="productpages/Biscuits-and-Chocolates.html">
 <img src="images/catimgs/Biscuits-and-Chocolates.png" alt="Biscuits-Chocolates">
@@ -75,7 +96,7 @@
 <div class="row">
 <div class="card"><a href="productpages/Tea-Coffee-Energy-Drinks.html">
 <img src="images/catimgs/Tea-Coffee-Energy-Drinks.png" alt="Tea-Coffee-Energy-Drinks">
-<span class="pname">Tea-EnergyDrink</span>       </a> </div>
+<span class="pname">TeaCoffeeEnergyDrink</span>       </a> </div>
 
 <div class="card"><a href="productpages/Canned-Food.html">
 <img src="images/catimgs/Canned-Food.png" alt="Canned-Food">
